@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AD Foundation NGO</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f5f9ff;
+color:#222;
+}
+
+header{
+background:linear-gradient(135deg,#002b7f,#0057b8,#0a7cff);
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo img{
+height:70px;
+}
+
+.logo h1{
+color:white;
+font-size:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:600;
+}
+
+.hero{
+background:linear-gradient(rgba(0,43,127,0.8),rgba(0,43,127,0.8)),
+url('hero.jpg');
+background-size:cover;
+background-position:center;
+height:85vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content{
+max-width:800px;
+}
+
+.hero h2{
+font-size:55px;
+color:white;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:20px;
+color:white;
+margin-bottom:25px;
+}
+
+.btn{
+background:#d4a017;
+color:white;
+padding:14px 30px;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+color:#002b7f;
+margin-bottom:40px;
+}
+
+.services{
+padding:80px 8%;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+color:#0057b8;
+margin-bottom:10px;
+}
+
+.founder{
+padding:80px 8%;
+background:white;
+text-align:center;
+}
+
+.founder-box{
+max-width:800px;
+margin:auto;
+padding:30px;
+border-radius:20px;
+background:#f5f9ff;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.celebration{
+padding:80px 8%;
+background:linear-gradient(135deg,#0057b8,#002b7f);
+text-align:center;
+color:white;
+}
+
+.address{
+padding:80px 8%;
+text-align:center;
+}
+
+.address-box{
+background:white;
+padding:30px;
+border-radius:20px;
+max-width:700px;
+margin:auto;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+footer{
+background:#001b4d;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:768px){
+
+.hero h2{
+font-size:35px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+<div class="logo">
+<img src="logo.png" alt="AD Foundation">
+<h1>AD Foundation</h1>
+</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Courses</a>
+<a href="#">Founder</a>
+<a href="#">Celebrations</a>
+<a href="#">Contact</a>
+</nav>
+
+</header>
+  <div class="logo">
+<img src="logo.png">
+<div>
+<h2>AD Foundation</h2>
+<p>Free Education For All</p>
+</div>
+</div>
+
+<nav>
+<a href="#">Home</a>
+<li><a href="#admission">Courses</a></li>
+<a href="#">Events</a>
+<a href="#">Gallery</a>
+<a href="#">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+<h2>Learn • Grow • Succeed</h2>
+
+<p>
+Free NGO Classes for Students to Build a Bright Future.
+Education, Skills & Technology Under One Roof.
+</p>
+
+<a href="#" class="btn">Join Now</a>
+</div>
+
+</section>
+
+<section class="services">
+
+<h2 class="section-title">Our Courses</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Mathematics</h3>
+  <img src="Mathematics.png">
+<p>Strong foundation in Maths with expert guidance.</p>
+</div>
+
+<div class="card">
+<h3>Science</h3>
+  <img src="Science.png">
+<p>Interactive learning and practical understanding.</p>
+</div>
+
+<div class="card">
+<h3>English</h3>
+  <img src="English.png">
+<p>Improve speaking, reading and writing skills.</p>
+</div>
+
+<div class="card">
+<h3>Computer</h3>
+  <img src="Computer.png">
+<p>Computer basics, MS Office and digital skills.</p>
+</div>
+
+<div class="card">
+<h3>Graphics Design</h3>
+  <img src="Graphics Design.png">  
+<p>Creative designing using modern tools.</p>
+</div>
+
+<div class="card">
+<h3>Artificial Intelligence</h3>
+  <img src="Artificial Intelligence.png">
+<p>Learn future-ready AI concepts and technology.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="founder">
+
+<h2 class="section-title">Founder</h2>
+
+<div class="founder-box">
+
+<h3>Mrs. Rakhi Luthra</h3>
+
+<p>
+Founder of AD Foundation NGO, dedicated to providing free quality education and skill development opportunities for students.
+</p>
+
+</div>
+
+</section>
+
+<section class="celebration">
+
+<h2>Celebrations & Events 🎉</h2>
+
+<br>
+
+<p>
+At AD Foundation we celebrate birthdays, achievements, educational events and community programs to create a joyful learning environment.
+</p>
+
+</section>
+
+<section class="address">
+
+<h2 class="section-title">Our Address</h2>
+
+<div class="address-box">
+
+<h3>AD Foundation NGO</h3>
+
+<p>
+Uttar Pradesh<br>
+Sector 92, Block A-17<br>
+Ground Floor
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 AD Foundation NGO | Learn • Grow • Succeed
+</p>
+
+</footer>
+
+</body>
+</html>
