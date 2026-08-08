@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AD Foundation NGO</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f9ff;
+    color:#222;
+}
+
+/* HEADER */
+
+header{
+    background:linear-gradient(135deg,#002b7f,#0057b8,#0a7cff);
+    padding:12px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#ffd700;
+}
+
+/* HERO */
+
+.hero{
+    background:
+    linear-gradient(rgba(0,43,127,0.8),rgba(0,43,127,0.8)),
+    url('hero.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    height:80vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.hero h2{
+    font-size:55px;
+    color:white;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:20px;
+    color:white;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    background:#d4a017;
+    color:white;
+    padding:14px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+    border:none;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:#b8860b;
+}
+
+/* VIDEO */
+
+.hero-video{
+    text-align:center;
+    padding:50px 8%;
+    background:#f5f9ff;
+}
+
+.hero-video video{
+    width:100%;
+    max-width:700px;
+    height:auto;
+    border-radius:20px;
+    display:block;
+    margin:auto;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* SECTION TITLE */
+
+.section-title{
+    text-align:center;
+    font-size:40px;
+    color:#002b7f;
+    margin-bottom:40px;
+}
+
+/* COURSES */
+
+.services{
+    padding:80px 8%;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:20px;
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+    margin-bottom:15px;
+}
+
+.card h3{
+    color:#0057b8;
+    margin-bottom:10px;
+}
+
+/* FOUNDER */
+
+.founder{
+    padding:80px 8%;
+    background:white;
+    text-align:center;
+}
+
+.founder-box{
+    max-width:800px;
+    margin:auto;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    background:#f5f9ff;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.founder-box h3{
+    color:#0057b8;
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+/* EVENTS */
+
+.celebration{
+    padding:80px 8%;
+
+    background:
+    linear-gradient(135deg,#0057b8,#002b7f);
+
+    text-align:center;
+    color:white;
+}
+
+.celebration h2{
+    font-size:40px;
+}
+
+/* CONTACT / FORM */
+
+.address{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.address-box{
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    max-width:700px;
+    margin:auto;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.application-form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.application-form input,
+.application-form select,
+.application-form textarea{
+
+    width:100%;
+
+    padding:14px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    outline:none;
+}
+
+.application-form input:focus,
+.application-form select:focus,
+.application-form textarea:focus{
+
+    border-color:#0057b8;
+}
+
+.application-form textarea{
+    resize:vertical;
+}
+
+/* FOOTER */
+
+footer{
+    background:#001b4d;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+        padding:12px 5%;
+    }
+
+    .logo img{
+        width:75px;
+        height:75px;
+    }
+
+    nav{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    nav a{
+        margin:7px;
+        font-size:14px;
+    }
+
+    .hero{
+        height:70vh;
+    }
+
+    .hero h2{
+        font-size:35px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .section-title{
+        font-size:32px;
+    }
+
+    .celebration h2{
+        font-size:30px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+<div class="logo">
+
+<img src="AD Foundation Logo (1).png" alt="AD Foundation Logo">
+
+</div>
+
+
+<nav>
+
+<a href="#">Home</a>
+
+<a href="#courses">Courses</a>
+
+<a href="#founder">Founder</a>
+
+<a href="#events">Celebrations</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h2>
+Learn • Grow • Succeed
+</h2>
+
+<p>
+Free NGO Classes for Students to Build a Bright Future.
+Education, Skills & Technology Under One Roof.
+</p>
+
+<a href="#contact" class="btn">
+Join Now
+</a>
+
+</div>
+
+</section>
+
+
+<!-- VIDEO -->
+
+<section class="hero-video">
+
+<h2 class="section-title">
+Our Video
+</h2>
+
+<video controls autoplay muted loop>
+
+<source src="intro.mp4" type="video/mp4">
+
+Your browser does not support the video tag.
+
+</video>
+
+</section>
+
+
+<!-- COURSES -->
+
+<section class="services" id="courses">
+
+<h2 class="section-title">
+Our Courses
+</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<img src="mathematics (1).png" alt="Mathematics">
+
+<h3>
+Mathematics
+</h3>
+
+<p>
+Strong foundation in Maths with expert guidance.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img src="Science (1).png" alt="Science">
+
+<h3>
+Science
+</h3>
+
+<p>
+Interactive learning and practical understanding.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img src="English (1).png" alt="English">
+
+<h3>
+English
+</h3>
+
+<p>
+Improve speaking, reading and writing skills.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img src="Computer (1).png" alt="Computer">
+
+<h3>
+Computer
+</h3>
+
+<p>
+Computer basics, MS Office and digital skills.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img src="Graphic design.png" alt="Graphic Design">
+
+<h3>
+Graphic Design
+</h3>
+
+<p>
+Creative designing using modern tools.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img src="Artificial intelligence (1).png" alt="Artificial Intelligence">
+
+<h3>
+Artificial Intelligence
+</h3>
+
+<p>
+Learn future-ready AI concepts and technology.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- FOUNDER -->
+
+<section class="founder" id="founder">
+
+<h2 class="section-title">
+Founder
+</h2>
+
+
+<div class="founder-box">
+
+<h3>
+Mrs. Rakhi Luthra
+</h3>
+
+<p>
+Founder of AD Foundation NGO, dedicated to providing free quality education and skill development opportunities for students.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- EVENTS -->
+
+<section class="celebration" id="events">
+
+<h2>
+Celebrations & Events 🎉
+</h2>
+
+<br>
+
+<p>
+At AD Foundation we celebrate birthdays, achievements,
+educational events and community programs to create a joyful learning environment.
+</p>
+
+</section>
+
+
+<!-- CONTACT / APPLICATION FORM -->
+
+<section class="address" id="contact">
+
+<h2 class="section-title">
+Apply Now
+</h2>
+
+
+<div class="address-box">
+
+<form class="application-form" onsubmit="sendToWhatsApp(event)">
+
+
+<input
+type="text"
+id="name"
+placeholder="Enter Your Name"
+required
+>
+
+
+<input
+type="tel"
+id="mobile"
+placeholder="Enter Mobile Number"
+required
+>
+
+
+<input
+type="text"
+id="className"
+placeholder="Enter Class"
+required
+>
+
+
+<select id="course" required>
+
+<option value="">
+Select Course
+</option>
+
+<option value="Mathematics">
+Mathematics
+</option>
+
+<option value="Science">
+Science
+</option>
+
+<option value="English">
+English
+</option>
+
+<option value="Computer">
+Computer
+</option>
+
+<option value="Graphic Design">
+Graphic Design
+</option>
+
+<option value="Artificial Intelligence">
+Artificial Intelligence
+</option>
+
+</select>
+
+
+<textarea
+id="message"
+rows="4"
+placeholder="Enter Your Message">
+</textarea>
+
+
+<button type="submit" class="btn">
+Submit Application
+</button>
+
+
+</form>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+© 2026 AD Foundation NGO | Learn • Grow • Succeed
+</p>
+
+</footer>
+
+
+<!-- WHATSAPP SCRIPT -->
+
+<script>
+
+function sendToWhatsApp(event){
+
+    event.preventDefault();
+
+
+    let name =
+    document.getElementById("name").value;
+
+
+    let mobile =
+    document.getElementById("mobile").value;
+
+
+    let className =
+    document.getElementById("className").value;
+
+
+    let course =
+    document.getElementById("course").value;
+
+
+    let message =
+    document.getElementById("message").value;
+
+
+    /*
+       ABHI TESTING KE LIYE *
+
+       BAAD MEIN * KI JAGAH APNA
+       WHATSAPP NUMBER LIKHNA HAI.
+
+       Example:
+       919876543210
+    */
+
+    let whatsappNumber = "*";
+
+
+    let whatsappMessage =
+    "New Application - AD Foundation NGO\n\n" +
+
+    "Name: " + name + "\n" +
+
+    "Mobile: " + mobile + "\n" +
+
+    "Class: " + className + "\n" +
+
+    "Course: " + course + "\n" +
+
+    "Message: " + message;
+
+
+    let url =
+    "https://wa.me/" +
+    whatsappNumber +
+    "?text=" +
+    encodeURIComponent(whatsappMessage);
+
+
+    window.open(url,"_blank");
+
+}
+
+</script>
+
+
+</body>
+</html>
