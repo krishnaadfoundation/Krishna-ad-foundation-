@@ -146,9 +146,7 @@ nav a:hover{
 
 .cards{
     display:grid;
-    grid-template-columns:
-    repeat(auto-fit,minmax(250px,1fr));
-
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:25px;
 }
 
@@ -157,9 +155,7 @@ nav a:hover{
     padding:20px;
     border-radius:20px;
     text-align:center;
-
     box-shadow:0 10px 25px rgba(0,0,0,0.1);
-
     transition:0.4s;
 }
 
@@ -170,9 +166,7 @@ nav a:hover{
 .card img{
     width:100%;
     height:180px;
-
     object-fit:cover;
-
     border-radius:15px;
     margin-bottom:15px;
 }
@@ -193,13 +187,9 @@ nav a:hover{
 .founder-box{
     max-width:800px;
     margin:auto;
-
     padding:30px;
-
     border-radius:20px;
-
     background:#f5f9ff;
-
     box-shadow:0 5px 20px rgba(0,0,0,0.1);
 }
 
@@ -213,10 +203,7 @@ nav a:hover{
 
 .celebration{
     padding:80px 8%;
-
-    background:
-    linear-gradient(135deg,#0057b8,#002b7f);
-
+    background:linear-gradient(135deg,#0057b8,#002b7f);
     text-align:center;
     color:white;
 }
@@ -224,6 +211,51 @@ nav a:hover{
 .celebration h2{
     font-size:40px;
 }
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery{
+    padding:80px 8%;
+    background:white;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.gallery-item{
+    background:#f5f9ff;
+    padding:15px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    overflow:hidden;
+    transition:0.4s;
+}
+
+.gallery-item:hover{
+    transform:translateY(-8px);
+}
+
+.gallery-item img,
+.gallery-item video{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+    display:block;
+}
+
+.gallery-item h3{
+    text-align:center;
+    color:#0057b8;
+    margin-top:12px;
+}
+
 
 /* CONTACT / FORM */
 
@@ -234,14 +266,10 @@ nav a:hover{
 
 .address-box{
     background:white;
-
     padding:30px;
-
     border-radius:20px;
-
     max-width:700px;
     margin:auto;
-
     box-shadow:0 10px 25px rgba(0,0,0,0.1);
 }
 
@@ -254,30 +282,24 @@ nav a:hover{
 .application-form input,
 .application-form select,
 .application-form textarea{
-
     width:100%;
-
     padding:14px;
-
     border:1px solid #ddd;
-
     border-radius:10px;
-
     font-size:16px;
-
     outline:none;
 }
 
 .application-form input:focus,
 .application-form select:focus,
 .application-form textarea:focus{
-
     border-color:#0057b8;
 }
 
 .application-form textarea{
     resize:vertical;
 }
+
 
 /* FOOTER */
 
@@ -287,6 +309,7 @@ footer{
     text-align:center;
     padding:20px;
 }
+
 
 /* MOBILE */
 
@@ -334,6 +357,11 @@ footer{
         font-size:30px;
     }
 
+    .gallery-item img,
+    .gallery-item video{
+        height:200px;
+    }
+
 }
 
 </style>
@@ -343,7 +371,7 @@ footer{
 <body>
 
 
-<!-- HEADER -->
+<!-- ================= HEADER ================= -->
 
 <header>
 
@@ -364,6 +392,8 @@ footer{
 
 <a href="#events">Celebrations</a>
 
+<a href="#gallery">Gallery</a>
+
 <a href="#contact">Contact</a>
 
 </nav>
@@ -371,7 +401,7 @@ footer{
 </header>
 
 
-<!-- HERO -->
+<!-- ================= HERO ================= -->
 
 <section class="hero">
 
@@ -395,7 +425,7 @@ Join Now
 </section>
 
 
-<!-- VIDEO -->
+<!-- ================= MAIN VIDEO ================= -->
 
 <section class="hero-video">
 
@@ -414,7 +444,7 @@ Your browser does not support the video tag.
 </section>
 
 
-<!-- COURSES -->
+<!-- ================= COURSES ================= -->
 
 <section class="services" id="courses">
 
@@ -430,9 +460,7 @@ Our Courses
 
 <img src="mathematics (1).png" alt="Mathematics">
 
-<h3>
-Mathematics
-</h3>
+<h3>Mathematics</h3>
 
 <p>
 Strong foundation in Maths with expert guidance.
@@ -445,9 +473,7 @@ Strong foundation in Maths with expert guidance.
 
 <img src="Science (1).png" alt="Science">
 
-<h3>
-Science
-</h3>
+<h3>Science</h3>
 
 <p>
 Interactive learning and practical understanding.
@@ -460,9 +486,7 @@ Interactive learning and practical understanding.
 
 <img src="English (1).png" alt="English">
 
-<h3>
-English
-</h3>
+<h3>English</h3>
 
 <p>
 Improve speaking, reading and writing skills.
@@ -475,9 +499,7 @@ Improve speaking, reading and writing skills.
 
 <img src="Computer (1).png" alt="Computer">
 
-<h3>
-Computer
-</h3>
+<h3>Computer</h3>
 
 <p>
 Computer basics, MS Office and digital skills.
@@ -490,9 +512,7 @@ Computer basics, MS Office and digital skills.
 
 <img src="Graphic design.png" alt="Graphic Design">
 
-<h3>
-Graphic Design
-</h3>
+<h3>Graphic Design</h3>
 
 <p>
 Creative designing using modern tools.
@@ -505,9 +525,7 @@ Creative designing using modern tools.
 
 <img src="Artificial intelligence (1).png" alt="Artificial Intelligence">
 
-<h3>
-Artificial Intelligence
-</h3>
+<h3>Artificial Intelligence</h3>
 
 <p>
 Learn future-ready AI concepts and technology.
@@ -521,7 +539,7 @@ Learn future-ready AI concepts and technology.
 </section>
 
 
-<!-- FOUNDER -->
+<!-- ================= FOUNDER ================= -->
 
 <section class="founder" id="founder">
 
@@ -545,7 +563,7 @@ Founder of AD Foundation NGO, dedicated to providing free quality education and 
 </section>
 
 
-<!-- EVENTS -->
+<!-- ================= EVENTS ================= -->
 
 <section class="celebration" id="events">
 
@@ -563,7 +581,192 @@ educational events and community programs to create a joyful learning environmen
 </section>
 
 
-<!-- CONTACT / APPLICATION FORM -->
+<!-- ================= GALLERY ================= -->
+
+<section class="gallery" id="gallery">
+
+<h2 class="section-title">
+Our Gallery
+</h2>
+
+
+<div class="gallery-grid">
+
+
+<!-- PHOTO 1 -->
+
+<div class="gallery-item">
+
+<img src="gallery1.jpg" alt="Gallery Photo 1">
+
+<h3>Foundation Activity</h3>
+
+</div>
+
+
+<!-- PHOTO 2 -->
+
+<div class="gallery-item">
+
+<img src="gallery2.jpg" alt="Gallery Photo 2">
+
+<h3>Students Learning</h3>
+
+</div>
+
+
+<!-- PHOTO 3 -->
+
+<div class="gallery-item">
+
+<img src="gallery3.jpg" alt="Gallery Photo 3">
+
+<h3>Class Activity</h3>
+
+</div>
+
+
+<!-- PHOTO 4 -->
+
+<div class="gallery-item">
+
+<img src="gallery4.jpg" alt="Gallery Photo 4">
+
+<h3>Foundation Event</h3>
+
+</div>
+
+
+<!-- PHOTO 5 -->
+
+<div class="gallery-item">
+
+<img src="gallery5.jpg" alt="Gallery Photo 5">
+
+<h3>Students Activity</h3>
+
+</div>
+
+
+<!-- PHOTO 6 -->
+
+<div class="gallery-item">
+
+<img src="gallery6.jpg" alt="Gallery Photo 6">
+
+<h3>Learning Program</h3>
+
+</div>
+
+
+<!-- VIDEO 1 -->
+
+<div class="gallery-item">
+
+<video controls>
+
+<source src="gallery-video1.mp4" type="video/mp4">
+
+Your browser does not support the video tag.
+
+</video>
+
+<h3>Class Video</h3>
+
+</div>
+
+
+<!-- VIDEO 2 -->
+
+<div class="gallery-item">
+
+<video controls>
+
+<source src="gallery-video2.mp4" type="video/mp4">
+
+Your browser does not support the video tag.
+
+</video>
+
+<h3>Foundation Event Video</h3>
+
+</div>
+
+
+<!-- VIDEO 3 -->
+
+<div class="gallery-item">
+
+<video controls>
+
+<source src="gallery-video3.mp4" type="video/mp4">
+
+Your browser does not support the video tag.
+
+</video>
+
+<h3>Students Activity Video</h3>
+
+</div>
+
+
+<!-- VIDEO 4 -->
+
+<div class="gallery-item">
+
+<video controls>
+
+<source src="gallery-video4.mp4" type="video/mp4">
+
+Your browser does not support the video tag.
+
+</video>
+
+<h3>Learning Video</h3>
+
+</div>
+
+
+<!-- VIDEO 5 -->
+
+<div class="gallery-item">
+
+<video controls>
+
+<source src="gallery-video5.mp4" type="video/mp4">
+
+Your browser does not support the video tag.
+
+</video>
+
+<h3>Education Program Video</h3>
+
+</div>
+
+
+<!-- VIDEO 6 -->
+
+<div class="gallery-item">
+
+<video controls>
+
+<source src="gallery-video6.mp4" type="video/mp4">
+
+Your browser does not support the video tag.
+
+</video>
+
+<h3>AD Foundation Event</h3>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ================= APPLY FORM ================= -->
 
 <section class="address" id="contact">
 
@@ -653,7 +856,7 @@ Submit Application
 </section>
 
 
-<!-- FOOTER -->
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
@@ -664,7 +867,7 @@ Submit Application
 </footer>
 
 
-<!-- WHATSAPP SCRIPT -->
+<!-- ================= WHATSAPP SCRIPT ================= -->
 
 <script>
 
