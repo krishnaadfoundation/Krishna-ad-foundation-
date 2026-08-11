@@ -184,6 +184,19 @@ nav a:hover{
     text-align:center;
 }
 
+/* FOUNDER ROUND PHOTO */
+
+.founder-photo{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    object-fit:cover;
+    display:block;
+    margin:0 auto 20px;
+    border:5px solid #0057b8;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
 .founder-box{
     max-width:800px;
     margin:auto;
@@ -212,10 +225,7 @@ nav a:hover{
     font-size:40px;
 }
 
-
-/* =========================
-   GALLERY
-========================= */
+/* GALLERY */
 
 .gallery{
     padding:80px 8%;
@@ -255,7 +265,6 @@ nav a:hover{
     color:#0057b8;
     margin-top:12px;
 }
-
 
 /* CONTACT / FORM */
 
@@ -300,7 +309,6 @@ nav a:hover{
     resize:vertical;
 }
 
-
 /* FOOTER */
 
 footer{
@@ -309,7 +317,6 @@ footer{
     text-align:center;
     padding:20px;
 }
-
 
 /* MOBILE */
 
@@ -362,14 +369,17 @@ footer{
         height:200px;
     }
 
+    .founder-photo{
+        width:140px;
+        height:140px;
+    }
+
 }
 
 </style>
 </head>
 
-
 <body>
-
 
 <!-- ================= HEADER ================= -->
 
@@ -380,7 +390,6 @@ footer{
 <img src="AD Foundation Logo (1).png" alt="AD Foundation Logo">
 
 </div>
-
 
 <nav>
 
@@ -452,9 +461,7 @@ Your browser does not support the video tag.
 Our Courses
 </h2>
 
-
 <div class="cards">
-
 
 <div class="card">
 
@@ -533,7 +540,6 @@ Learn future-ready AI concepts and technology.
 
 </div>
 
-
 </div>
 
 </section>
@@ -543,10 +549,13 @@ Learn future-ready AI concepts and technology.
 
 <section class="founder" id="founder">
 
+<!-- FOUNDER PHOTO -->
+
+<img src="founder.png" alt="Founder" class="founder-photo">
+
 <h2 class="section-title">
 Founder
 </h2>
-
 
 <div class="founder-box">
 
@@ -589,16 +598,13 @@ educational events and community programs to create a joyful learning environmen
 Our Gallery
 </h2>
 
-
 <div class="gallery-grid">
-
 
 <!-- PHOTO 1 -->
 
 <div class="gallery-item">
 
 <img src="gallery1.png" alt="Gallery Photo 1">
-
 
 </div>
 
@@ -609,7 +615,6 @@ Our Gallery
 
 <img src="gallery2.png" alt="Gallery Photo 2">
 
-
 </div>
 
 
@@ -618,7 +623,6 @@ Our Gallery
 <div class="gallery-item">
 
 <img src="gallery3.png" alt="Gallery Photo 3">
-
 
 </div>
 
@@ -629,7 +633,6 @@ Our Gallery
 
 <img src="gallery4.png" alt="Gallery Photo 4">
 
-
 </div>
 
 
@@ -639,7 +642,6 @@ Our Gallery
 
 <img src="gallery5.png" alt="Gallery Photo 5">
 
-
 </div>
 
 
@@ -648,7 +650,6 @@ Our Gallery
 <div class="gallery-item">
 
 <img src="gallery6.png" alt="Gallery Photo 6">
-
 
 </div>
 
@@ -665,7 +666,6 @@ Your browser does not support the video tag.
 
 </video>
 
-
 </div>
 
 
@@ -680,7 +680,6 @@ Your browser does not support the video tag.
 Your browser does not support the video tag.
 
 </video>
-
 
 </div>
 
@@ -697,7 +696,6 @@ Your browser does not support the video tag.
 
 </video>
 
-
 </div>
 
 
@@ -712,7 +710,6 @@ Your browser does not support the video tag.
 Your browser does not support the video tag.
 
 </video>
-
 
 </div>
 
@@ -729,7 +726,6 @@ Your browser does not support the video tag.
 
 </video>
 
-
 </div>
 
 
@@ -745,9 +741,7 @@ Your browser does not support the video tag.
 
 </video>
 
-
 </div>
-
 
 </div>
 
@@ -762,11 +756,9 @@ Your browser does not support the video tag.
 Apply Now
 </h2>
 
-
 <div class="address-box">
 
 <form class="application-form" onsubmit="sendToWhatsApp(event)">
-
 
 <input
 type="text"
@@ -775,7 +767,6 @@ placeholder="Enter Your Name"
 required
 >
 
-
 <input
 type="tel"
 id="mobile"
@@ -783,14 +774,12 @@ placeholder="Enter Mobile Number"
 required
 >
 
-
 <input
 type="text"
 id="className"
 placeholder="Enter Class"
 required
 >
-
 
 <select id="course" required>
 
@@ -824,18 +813,15 @@ Artificial Intelligence
 
 </select>
 
-
 <textarea
 id="message"
 rows="4"
 placeholder="Enter Your Message">
 </textarea>
 
-
 <button type="submit" class="btn">
 Submit Application
 </button>
-
 
 </form>
 
@@ -863,39 +849,31 @@ function sendToWhatsApp(event){
 
     event.preventDefault();
 
-
     let name =
     document.getElementById("name").value;
-
 
     let mobile =
     document.getElementById("mobile").value;
 
-
     let className =
     document.getElementById("className").value;
-
 
     let course =
     document.getElementById("course").value;
 
-
     let message =
     document.getElementById("message").value;
 
-
     /*
-       ABHI TESTING KE LIYE *
-
-       BAAD MEIN * KI JAGAH APNA
-       WHATSAPP NUMBER LIKHNA HAI.
+       YAHAN APNA WHATSAPP NUMBER LIKHNA HAI.
 
        Example:
        919876543210
+
+       +, space ya - MAT lagana.
     */
 
     let whatsappNumber = "*";
-
 
     let whatsappMessage =
     "New Application - AD Foundation NGO\n\n" +
@@ -910,20 +888,17 @@ function sendToWhatsApp(event){
 
     "Message: " + message;
 
-
     let url =
     "https://wa.me/" +
     whatsappNumber +
     "?text=" +
     encodeURIComponent(whatsappMessage);
 
-
     window.open(url,"_blank");
 
 }
 
 </script>
-
 
 </body>
 </html>
