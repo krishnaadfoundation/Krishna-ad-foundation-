@@ -59,7 +59,8 @@ nav a:hover{
     color:#ffd700;
 }
 
-/* HERO */
+
+/* ================= HERO ================= */
 
 .hero{
     background:
@@ -69,32 +70,44 @@ nav a:hover{
     background-size:cover;
     background-position:center;
 
-    height:80vh;
+    min-height:80vh;
 
     display:flex;
     align-items:center;
     justify-content:center;
 
     text-align:center;
-    padding:20px;
+    padding:40px 20px;
 }
 
 .hero-content{
     max-width:800px;
 }
 
-/* LEARN PHOTO */
+
+/* ================= CIRCLE PHOTO ================= */
 
 .learn-photo{
     width:180px;
     height:180px;
-    object-fit:cover;
-    border-radius:50%;
+
     display:block;
-    margin:0 auto 20px;
-    border:5px solid white;
-    box-shadow:0 8px 25px rgba(0,0,0,0.3);
+    margin:0 auto 35px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:6px solid white;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.35);
+
+    background:#31599b;
 }
+
+
+/* HERO TEXT */
 
 .hero h2{
     font-size:55px;
@@ -107,6 +120,9 @@ nav a:hover{
     color:white;
     margin-bottom:25px;
 }
+
+
+/* BUTTON */
 
 .btn{
     display:inline-block;
@@ -124,7 +140,8 @@ nav a:hover{
     background:#b8860b;
 }
 
-/* VIDEO */
+
+/* ================= VIDEO ================= */
 
 .hero-video{
     text-align:center;
@@ -142,7 +159,8 @@ nav a:hover{
     box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
 
-/* SECTION TITLE */
+
+/* ================= SECTION TITLE ================= */
 
 .section-title{
     text-align:center;
@@ -151,7 +169,8 @@ nav a:hover{
     margin-bottom:40px;
 }
 
-/* COURSES */
+
+/* ================= COURSES ================= */
 
 .services{
     padding:80px 8%;
@@ -189,7 +208,8 @@ nav a:hover{
     margin-bottom:10px;
 }
 
-/* FOUNDER */
+
+/* ================= FOUNDER ================= */
 
 .founder{
     padding:80px 8%;
@@ -223,7 +243,8 @@ nav a:hover{
     margin-bottom:15px;
 }
 
-/* EVENTS */
+
+/* ================= EVENTS ================= */
 
 .celebration{
     padding:80px 8%;
@@ -236,7 +257,8 @@ nav a:hover{
     font-size:40px;
 }
 
-/* GALLERY */
+
+/* ================= GALLERY ================= */
 
 .gallery{
     padding:80px 8%;
@@ -277,7 +299,8 @@ nav a:hover{
     margin-top:12px;
 }
 
-/* CONTACT / FORM */
+
+/* ================= CONTACT / FORM ================= */
 
 .address{
     padding:80px 8%;
@@ -320,7 +343,8 @@ nav a:hover{
     resize:vertical;
 }
 
-/* FOOTER */
+
+/* ================= FOOTER ================= */
 
 footer{
     background:#001b4d;
@@ -329,7 +353,8 @@ footer{
     padding:20px;
 }
 
-/* MOBILE */
+
+/* ================= MOBILE ================= */
 
 @media(max-width:768px){
 
@@ -356,12 +381,17 @@ footer{
     }
 
     .hero{
-        height:70vh;
+        min-height:70vh;
+        padding:40px 15px;
     }
 
+    /* MOBILE CIRCLE PHOTO */
+
     .learn-photo{
-        width:140px;
-        height:140px;
+        width:150px;
+        height:150px;
+        margin-bottom:30px;
+        border:5px solid white;
     }
 
     .hero h2{
@@ -397,6 +427,7 @@ footer{
 
 <body>
 
+
 <!-- ================= HEADER ================= -->
 
 <header>
@@ -427,13 +458,15 @@ footer{
 
 <div class="hero-content">
 
-<!-- LEARN & GROWTH PHOTO -->
+
+<!-- CIRCLE PHOTO -->
 
 <img
-src="learn.jpg"
-alt="Learn & Growth"
+src="learn-photo.jpg"
+alt="AD Foundation Learn and Grow"
 class="learn-photo"
 >
+
 
 <h2>
 Learn • Grow • Succeed
@@ -481,6 +514,7 @@ Our Courses
 </h2>
 
 <div class="cards">
+
 
 <div class="card">
 
@@ -568,7 +602,11 @@ Learn future-ready AI concepts and technology.
 
 <section class="founder" id="founder">
 
-<img src="founder.png" alt="Founder" class="founder-photo">
+<img
+src="founder.png"
+alt="Founder"
+class="founder-photo"
+>
 
 <h2 class="section-title">
 Founder
@@ -617,6 +655,7 @@ Our Gallery
 
 <div class="gallery-grid">
 
+
 <div class="gallery-item">
 <img src="gallery1.png" alt="Gallery Photo 1">
 </div>
@@ -640,6 +679,7 @@ Our Gallery
 <div class="gallery-item">
 <img src="gallery6.png" alt="Gallery Photo 6">
 </div>
+
 
 <div class="gallery-item">
 <video controls>
@@ -804,16 +844,11 @@ function sendToWhatsApp(event){
     let message =
     document.getElementById("message").value;
 
-    /*
-       YAHAN APNA WHATSAPP NUMBER LIKHNA HAI.
 
-       Example:
-       919876543210
-
-       +, space ya - MAT lagana.
-    */
+    /* APNA WHATSAPP NUMBER YAHAN LIKHEN */
 
     let whatsappNumber = "*";
+
 
     let whatsappMessage =
     "New Application - AD Foundation NGO\n\n" +
@@ -828,11 +863,13 @@ function sendToWhatsApp(event){
 
     "Message: " + message;
 
+
     let url =
     "https://wa.me/" +
     whatsappNumber +
     "?text=" +
     encodeURIComponent(whatsappMessage);
+
 
     window.open(url,"_blank");
 
