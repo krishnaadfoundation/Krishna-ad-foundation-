@@ -8,6 +8,10 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
+<!-- WhatsApp Icon -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 <style>
 
 *{
@@ -26,7 +30,7 @@ body{
     color:#222;
 }
 
-/* HEADER */
+/* ================= HEADER ================= */
 
 header{
     background:linear-gradient(135deg,#002b7f,#0057b8,#0a7cff);
@@ -39,7 +43,6 @@ header{
 .logo{
     display:flex;
     align-items:center;
-    gap:15px;
 }
 
 .logo img{
@@ -92,7 +95,7 @@ nav a:hover{
     height:180px;
 
     display:block;
-    margin:0 auto 35px;
+    margin:0 auto;
 
     object-fit:cover;
 
@@ -102,12 +105,22 @@ nav a:hover{
 
     box-shadow:
         0 8px 25px rgba(0,0,0,0.35);
-
-    background:#31599b;
 }
 
 
-/* HERO TEXT */
+/* ================= NAME ================= */
+
+.hero-name{
+    color:white;
+    font-size:27px;
+    font-weight:600;
+    margin-top:15px;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+
+/* ================= HERO TEXT ================= */
 
 .hero h2{
     font-size:55px;
@@ -122,7 +135,7 @@ nav a:hover{
 }
 
 
-/* BUTTON */
+/* ================= BUTTON ================= */
 
 .btn{
     display:inline-block;
@@ -206,6 +219,60 @@ nav a:hover{
 .card h3{
     color:#0057b8;
     margin-bottom:10px;
+}
+
+
+/* ================= TEACHERS ================= */
+
+.teachers{
+    padding:80px 8%;
+    background:#f5f9ff;
+}
+
+.teacher-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:25px;
+}
+
+.teacher-card{
+    background:white;
+    padding:30px 20px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    transition:0.4s;
+}
+
+.teacher-card:hover{
+    transform:translateY(-10px);
+}
+
+.teacher-photo{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #0057b8;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    margin-bottom:18px;
+}
+
+.teacher-card h3{
+    color:#0057b8;
+    font-size:23px;
+    margin-bottom:8px;
+}
+
+.teacher-card h4{
+    color:#d4a017;
+    margin-bottom:12px;
+}
+
+.teacher-card p{
+    color:#555;
+    font-size:15px;
+    line-height:1.6;
 }
 
 
@@ -293,12 +360,6 @@ nav a:hover{
     display:block;
 }
 
-.gallery-item h3{
-    text-align:center;
-    color:#0057b8;
-    margin-top:12px;
-}
-
 
 /* ================= CONTACT / FORM ================= */
 
@@ -344,6 +405,41 @@ nav a:hover{
 }
 
 
+/* ================= WHATSAPP BUTTON ================= */
+
+.whatsapp-float{
+    position:fixed;
+    width:62px;
+    height:62px;
+    bottom:25px;
+    right:25px;
+
+    background:#25D366;
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:34px;
+
+    text-decoration:none;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.3);
+
+    z-index:9999;
+
+    transition:0.3s;
+}
+
+.whatsapp-float:hover{
+    transform:scale(1.1);
+    background:#20bd5a;
+}
+
+
 /* ================= FOOTER ================= */
 
 footer{
@@ -385,13 +481,14 @@ footer{
         padding:40px 15px;
     }
 
-    /* MOBILE CIRCLE PHOTO */
-
     .learn-photo{
         width:150px;
         height:150px;
-        margin-bottom:30px;
-        border:5px solid white;
+    }
+
+    .hero-name{
+        font-size:23px;
+        margin-top:12px;
     }
 
     .hero h2{
@@ -420,6 +517,19 @@ footer{
         height:140px;
     }
 
+    .teacher-photo{
+        width:135px;
+        height:135px;
+    }
+
+    .whatsapp-float{
+        width:58px;
+        height:58px;
+        right:18px;
+        bottom:18px;
+        font-size:31px;
+    }
+
 }
 
 </style>
@@ -434,7 +544,8 @@ footer{
 
 <div class="logo">
 
-<img src="AD Foundation Logo (1).png" alt="AD Foundation Logo">
+<img src="AD Foundation Logo (1).png"
+alt="AD Foundation Logo">
 
 </div>
 
@@ -442,6 +553,7 @@ footer{
 
 <a href="#">Home</a>
 <a href="#courses">Courses</a>
+<a href="#teachers">Teachers</a>
 <a href="#founder">Founder</a>
 <a href="#events">Celebrations</a>
 <a href="#gallery">Gallery</a>
@@ -458,15 +570,15 @@ footer{
 
 <div class="hero-content">
 
-
-<!-- CIRCLE PHOTO -->
-
 <img
 src="learn-photo.png"
 alt="AD Foundation Learn and Grow"
 class="learn-photo"
 >
 
+<h3 class="hero-name">
+Mr Abhya Luthra
+</h3>
 
 <h2>
 Learn • Grow • Succeed
@@ -515,10 +627,10 @@ Our Courses
 
 <div class="cards">
 
-
 <div class="card">
 
-<img src="mathematics (1).png" alt="Mathematics">
+<img src="mathematics (1).png"
+alt="Mathematics">
 
 <h3>Mathematics</h3>
 
@@ -531,7 +643,8 @@ Strong foundation in Maths with expert guidance.
 
 <div class="card">
 
-<img src="Science.png" alt="Science">
+<img src="Science.png"
+alt="Science">
 
 <h3>Science</h3>
 
@@ -544,7 +657,8 @@ Interactive learning and practical understanding.
 
 <div class="card">
 
-<img src="English.png" alt="English">
+<img src="English.png"
+alt="English">
 
 <h3>English</h3>
 
@@ -557,7 +671,8 @@ Improve speaking, reading and writing skills.
 
 <div class="card">
 
-<img src="Computer (1).png" alt="Computer">
+<img src="Computer (1).png"
+alt="Computer">
 
 <h3>Computer</h3>
 
@@ -570,7 +685,8 @@ Computer basics, MS Office and digital skills.
 
 <div class="card">
 
-<img src="Graphic design.png" alt="Graphic Design">
+<img src="Graphic design.png"
+alt="Graphic Design">
 
 <h3>Graphic Design</h3>
 
@@ -583,7 +699,8 @@ Creative designing using modern tools.
 
 <div class="card">
 
-<img src="Artificial intelligence (1).png" alt="Artificial Intelligence">
+<img src="Artificial intelligence (1).png"
+alt="Artificial Intelligence">
 
 <h3>Artificial Intelligence</h3>
 
@@ -598,15 +715,136 @@ Learn future-ready AI concepts and technology.
 </section>
 
 
+<!-- ================= TEACHERS ================= -->
+
+<section class="teachers" id="teachers">
+
+<h2 class="section-title">
+Our Teachers
+</h2>
+
+<div class="teacher-grid">
+
+
+<div class="teacher-card">
+
+<img src="teacher1.png"
+alt="Teacher 1"
+class="teacher-photo">
+
+<h3>Teacher Name 1</h3>
+
+<h4>Mathematics Teacher</h4>
+
+<p>
+Helping students understand Mathematics
+with simple and practical learning methods.
+</p>
+
+</div>
+
+
+<div class="teacher-card">
+
+<img src="teacher2.png"
+alt="Teacher 2"
+class="teacher-photo">
+
+<h3>Teacher Name 2</h3>
+
+<h4>Science Teacher</h4>
+
+<p>
+Making Science interesting through
+interactive and practical learning.
+</p>
+
+</div>
+
+
+<div class="teacher-card">
+
+<img src="teacher3.png"
+alt="Teacher 3"
+class="teacher-photo">
+
+<h3>Teacher Name 3</h3>
+
+<h4>English Teacher</h4>
+
+<p>
+Helping students improve their speaking,
+reading and writing skills.
+</p>
+
+</div>
+
+
+<div class="teacher-card">
+
+<img src="teacher4.png"
+alt="Teacher 4"
+class="teacher-photo">
+
+<h3>Teacher Name 4</h3>
+
+<h4>Computer Teacher</h4>
+
+<p>
+Teaching computer basics and
+digital skills for the future.
+</p>
+
+</div>
+
+
+<div class="teacher-card">
+
+<img src="teacher5.png"
+alt="Teacher 5"
+class="teacher-photo">
+
+<h3>Teacher Name 5</h3>
+
+<h4>Graphic Design Teacher</h4>
+
+<p>
+Helping students learn creativity,
+design and modern digital tools.
+</p>
+
+</div>
+
+
+<div class="teacher-card">
+
+<img src="teacher6.png"
+alt="Teacher 6"
+class="teacher-photo">
+
+<h3>Teacher Name 6</h3>
+
+<h4>AI Teacher</h4>
+
+<p>
+Introducing students to Artificial
+Intelligence and future technologies.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
 <!-- ================= FOUNDER ================= -->
 
 <section class="founder" id="founder">
 
-<img
-src="founder.png"
+<img src="founder.png"
 alt="Founder"
-class="founder-photo"
->
+class="founder-photo">
 
 <h2 class="section-title">
 Founder
@@ -657,69 +895,75 @@ Our Gallery
 
 
 <div class="gallery-item">
-<img src="gallery1.png" alt="Gallery Photo 1">
+<img src="gallery1.png"
+alt="Gallery Photo 1">
 </div>
 
 <div class="gallery-item">
-<img src="gallery2.png" alt="Gallery Photo 2">
+<img src="gallery2.png"
+alt="Gallery Photo 2">
 </div>
 
 <div class="gallery-item">
-<img src="gallery3.png" alt="Gallery Photo 3">
+<img src="gallery3.png"
+alt="Gallery Photo 3">
 </div>
 
 <div class="gallery-item">
-<img src="gallery4.png" alt="Gallery Photo 4">
+<img src="gallery4.png"
+alt="Gallery Photo 4">
 </div>
 
 <div class="gallery-item">
-<img src="gallery5.png" alt="Gallery Photo 5">
+<img src="gallery5.png"
+alt="Gallery Photo 5">
 </div>
 
 <div class="gallery-item">
-<img src="gallery6.png" alt="Gallery Photo 6">
+<img src="gallery6.png"
+alt="Gallery Photo 6">
 </div>
 
 
 <div class="gallery-item">
 <video controls>
-<source src="gallery-video1.mp4" type="video/mp4">
-Your browser does not support the video tag.
+<source src="gallery-video1.mp4"
+type="video/mp4">
 </video>
 </div>
 
 <div class="gallery-item">
 <video controls>
-<source src="gallery-video2.mp4" type="video/mp4">
-Your browser does not support the video tag.
+<source src="gallery-video2.mp4"
+type="video/mp4">
 </video>
 </div>
 
 <div class="gallery-item">
 <video controls>
-<source src="gallery-video3.mp4" type="video/mp4">
-Your browser does not support the video tag.
+<source src="gallery-video3.mp4"
+type="video/mp4">
 </video>
 </div>
 
 <div class="gallery-item">
 <video controls>
-<source src="gallery-video4.mp4" type="video/mp4">
-Your browser does not support the video tag.
+<source src="gallery-video4.mp4"
+type="video/mp4">
 </video>
 </div>
 
 <div class="gallery-item">
 <video controls>
-<source src="gallery-video5.mp4" type="video/mp4">
-Your browser does not support the video tag.
+<source src="gallery-video5.mp4"
+type="video/mp4">
 </video>
 </div>
 
 <div class="gallery-item">
 <video controls>
-<source src="gallery-video6.mp4" type="video/mp4">
-Your browser does not support the video tag.
+<source src="gallery-video6.mp4"
+type="video/mp4">
 </video>
 </div>
 
@@ -738,7 +982,10 @@ Apply Now
 
 <div class="address-box">
 
-<form class="application-form" onsubmit="sendToWhatsApp(event)">
+<form
+class="application-form"
+onsubmit="sendToWhatsApp(event)"
+>
 
 <input
 type="text"
@@ -799,7 +1046,10 @@ rows="4"
 placeholder="Enter Your Message">
 </textarea>
 
-<button type="submit" class="btn">
+<button
+type="submit"
+class="btn"
+>
 Submit Application
 </button>
 
@@ -810,12 +1060,31 @@ Submit Application
 </section>
 
 
+<!-- ================= FLOATING WHATSAPP ================= -->
+
+<a
+href="https://wa.me/919315957454"
+class="whatsapp-float"
+target="_blank"
+rel="noopener"
+aria-label="Chat on WhatsApp"
+>
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+
 <!-- ================= FOOTER ================= -->
 
 <footer>
 
 <p>
 © 2026 AD Foundation NGO | Learn • Grow • Succeed
+</p>
+
+<p style="margin-top:8px;">
+WhatsApp: +91 93159 57454
 </p>
 
 </footer>
@@ -845,9 +1114,10 @@ function sendToWhatsApp(event){
     document.getElementById("message").value;
 
 
-    /* APNA WHATSAPP NUMBER YAHAN LIKHEN */
+    /* YOUR WHATSAPP NUMBER */
 
-    let whatsappNumber = "*";
+    let whatsappNumber =
+    "919315957454";
 
 
     let whatsappMessage =
@@ -871,11 +1141,15 @@ function sendToWhatsApp(event){
     encodeURIComponent(whatsappMessage);
 
 
-    window.open(url,"_blank");
+    window.open(
+        url,
+        "_blank"
+    );
 
 }
 
 </script>
+
 
 </body>
 </html>
