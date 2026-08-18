@@ -222,6 +222,71 @@ nav a:hover{
 }
 
 
+/* ================= GAMES ================= */
+
+.games{
+    padding:80px 8%;
+    background:#ffffff;
+}
+
+.games-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+}
+
+.game-card{
+    background:#f5f9ff;
+    padding:18px;
+    border-radius:22px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+    transition:0.4s;
+}
+
+.game-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.18);
+}
+
+.game-card img{
+    width:100%;
+    height:190px;
+    object-fit:cover;
+    border-radius:16px;
+    margin-bottom:15px;
+}
+
+.game-card h3{
+    color:#0057b8;
+    font-size:22px;
+    margin-bottom:8px;
+}
+
+.game-card p{
+    color:#555;
+    font-size:14px;
+    line-height:1.6;
+    margin-bottom:15px;
+}
+
+.game-btn{
+    display:inline-block;
+    background:#0057b8;
+    color:white;
+    padding:10px 24px;
+    border-radius:25px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.game-btn:hover{
+    background:#002b7f;
+    transform:scale(1.05);
+}
+
+
 /* ================= TEACHERS ================= */
 
 .teachers{
@@ -522,6 +587,10 @@ footer{
         height:135px;
     }
 
+    .game-card img{
+        height:180px;
+    }
+
     .whatsapp-float{
         width:58px;
         height:58px;
@@ -553,6 +622,7 @@ alt="AD Foundation Logo">
 
 <a href="#">Home</a>
 <a href="#courses">Courses</a>
+<a href="#games">Games</a>
 <a href="#teachers">Teachers</a>
 <a href="#founder">Founder</a>
 <a href="#events">Celebrations</a>
@@ -715,6 +785,118 @@ Learn future-ready AI concepts and technology.
 </section>
 
 
+<!-- ================= GAMES ================= -->
+
+<section class="games" id="games">
+
+<h2 class="section-title">
+Fun Learning Games 🎮
+</h2>
+
+<div class="games-grid">
+
+
+<!-- GAME 1 -->
+
+<div class="game-card">
+
+<img
+src="puzzle-game.png"
+alt="Puzzle Game"
+>
+
+<h3>
+🧩 Puzzle Game
+</h3>
+
+<p>
+Improve your thinking and problem-solving skills.
+</p>
+
+<a href="#" class="game-btn">
+Play Now
+</a>
+
+</div>
+
+
+<!-- GAME 2 -->
+
+<div class="game-card">
+
+<img
+src="quiz-game.png"
+alt="Quiz Game"
+>
+
+<h3>
+🧠 Quiz Game
+</h3>
+
+<p>
+Test your knowledge with fun educational questions.
+</p>
+
+<a href="#" class="game-btn">
+Play Now
+</a>
+
+</div>
+
+
+<!-- GAME 3 -->
+
+<div class="game-card">
+
+<img
+src="math-game.png"
+alt="Math Game"
+>
+
+<h3>
+🔢 Math Game
+</h3>
+
+<p>
+Learn Mathematics through exciting challenges.
+</p>
+
+<a href="#" class="game-btn">
+Play Now
+</a>
+
+</div>
+
+
+<!-- GAME 4 -->
+
+<div class="game-card">
+
+<img
+src="memory-game.png"
+alt="Memory Game"
+>
+
+<h3>
+🎯 Memory Game
+</h3>
+
+<p>
+Train your memory with this fun learning game.
+</p>
+
+<a href="#" class="game-btn">
+Play Now
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
 <!-- ================= TEACHERS ================= -->
 
 <section class="teachers" id="teachers">
@@ -729,7 +911,6 @@ Our Teachers
 <div class="teacher-card">
 
 <img src="teacher1.png"
-
 class="teacher-photo">
 
 <h3>Ms Jassy</h3>
@@ -747,7 +928,6 @@ with simple and practical learning methods.
 <div class="teacher-card">
 
 <img src="teacher2.png"
-
 class="teacher-photo">
 
 <h3>Mrs maninder</h3>
@@ -765,12 +945,11 @@ interactive and practical learning.
 <div class="teacher-card">
 
 <img src="teacher3.png"
-
 class="teacher-photo">
 
-<h3>Ms preeti </h3>
+<h3>Ms preeti</h3>
 
-<h4> Teacher</h4>
+<h4>Teacher</h4>
 
 <p>
 Helping students improve their speaking,
@@ -783,10 +962,9 @@ reading and writing skills.
 <div class="teacher-card">
 
 <img src="teacher4.png"
-
 class="teacher-photo">
 
-<h3>Ms Monika </h3>
+<h3>Ms Monika</h3>
 
 <h4>Computer Teacher</h4>
 
@@ -801,10 +979,9 @@ digital skills for the future.
 <div class="teacher-card">
 
 <img src="teacher5.png"
-
 class="teacher-photo">
 
-<h3>Mrs Laxmi </h3>
+<h3>Mrs Laxmi</h3>
 
 <h4>Graphic Design Teacher</h4>
 
@@ -819,10 +996,9 @@ design and modern digital tools.
 <div class="teacher-card">
 
 <img src="teacher6.png"
-
 class="teacher-photo">
 
-<h3>Mr Raghav </h3>
+<h3>Mr Raghav</h3>
 
 <h4>AI Teacher</h4>
 
@@ -1113,8 +1289,6 @@ function sendToWhatsApp(event){
     let message =
     document.getElementById("message").value;
 
-
-    /* YOUR WHATSAPP NUMBER */
 
     let whatsappNumber =
     "919315957454";
