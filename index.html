@@ -29,6 +29,7 @@ body{
     color:#222;
 }
 
+
 /* ================= HEADER ================= */
 
 header{
@@ -37,6 +38,10 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 4px 20px rgba(0,0,0,0.15);
 }
 
 .logo{
@@ -50,16 +55,25 @@ header{
     object-fit:contain;
 }
 
+nav{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
 nav a{
     color:white;
     text-decoration:none;
     margin-left:20px;
     font-weight:600;
+    transition:0.3s;
 }
 
 nav a:hover{
     color:#ffd700;
 }
+
 
 /* ================= HERO ================= */
 
@@ -89,34 +103,58 @@ nav a:hover{
     max-width:800px;
 }
 
-/* ================= CIRCLE PHOTO ================= */
+
+/* ================= HERO PHOTO ================= */
 
 .learn-photo{
     width:180px;
     height:180px;
+
     display:block;
     margin:0 auto;
+
     object-fit:cover;
+
     border-radius:50%;
+
     border:6px solid white;
-    box-shadow:0 8px 25px rgba(0,0,0,0.35);
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,0.35);
 }
+
 
 /* ================= NAME ================= */
 
 .hero-name{
-    background:linear-gradient(135deg,#0057b8,#00a8ff,#00d4ff);
+    background:
+    linear-gradient(
+        135deg,
+        #0057b8,
+        #00a8ff,
+        #00d4ff
+    );
+
     color:white;
+
     font-size:27px;
     font-weight:600;
+
     padding:15px 35px;
+
     border-radius:15px;
+
     display:inline-block;
+
     margin-top:15px;
     margin-bottom:20px;
+
     text-align:center;
-    box-shadow:0 5px 20px rgba(0,87,184,0.4);
+
+    box-shadow:
+    0 5px 20px rgba(0,87,184,0.4);
 }
+
 
 /* ================= HERO TEXT ================= */
 
@@ -132,50 +170,78 @@ nav a:hover{
     margin-bottom:25px;
 }
 
+
 /* ================= BUTTON ================= */
 
 .btn{
     display:inline-block;
+
     background:#d4a017;
+
     color:white;
+
     padding:14px 30px;
+
     border-radius:30px;
+
     text-decoration:none;
+
     font-weight:600;
+
     border:none;
+
     cursor:pointer;
+
+    transition:0.3s;
 }
 
 .btn:hover{
     background:#b8860b;
+
+    transform:translateY(-3px);
 }
 
-/* ================= VIDEO ================= */
+
+/* ================= MAIN VIDEO ================= */
 
 .hero-video{
     text-align:center;
+
     padding:50px 8%;
+
     background:#f5f9ff;
 }
 
 .hero-video video{
     width:100%;
+
     max-width:700px;
+
     height:auto;
+
     border-radius:20px;
+
     display:block;
+
     margin:auto;
-    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.15);
 }
+
 
 /* ================= SECTION TITLE ================= */
 
 .section-title{
     text-align:center;
+
     font-size:40px;
+
     color:#002b7f;
+
     margin-bottom:40px;
 }
+
 
 /* ================= COURSES ================= */
 
@@ -185,16 +251,25 @@ nav a:hover{
 
 .cards{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
     gap:25px;
 }
 
 .card{
     background:white;
+
     padding:20px;
+
     border-radius:20px;
+
     text-align:center;
-    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.1);
+
     transition:0.4s;
 }
 
@@ -204,100 +279,146 @@ nav a:hover{
 
 .card img{
     width:100%;
+
     height:180px;
+
     object-fit:cover;
+
     border-radius:15px;
+
     margin-bottom:15px;
 }
 
 .card h3{
     color:#0057b8;
+
     margin-bottom:10px;
 }
+
 
 /* ================= GAMES ================= */
 
 .games{
     padding:80px 8%;
+
     background:#ffffff;
 }
 
 .games-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(240px,1fr));
+
     gap:25px;
 }
 
 .game-card{
     background:#f5f9ff;
+
     padding:18px;
+
     border-radius:22px;
+
     text-align:center;
-    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.12);
+
     transition:0.4s;
 }
 
 .game-card:hover{
     transform:translateY(-10px);
-    box-shadow:0 15px 30px rgba(0,0,0,0.18);
+
+    box-shadow:
+    0 15px 30px rgba(0,0,0,0.18);
 }
 
 .game-card img{
     width:100%;
+
     height:190px;
+
     object-fit:cover;
+
     border-radius:16px;
+
     margin-bottom:15px;
 }
 
 .game-card h3{
     color:#0057b8;
+
     font-size:22px;
+
     margin-bottom:8px;
 }
 
 .game-card p{
     color:#555;
+
     font-size:14px;
+
     line-height:1.6;
+
     margin-bottom:15px;
 }
 
 .game-btn{
     display:inline-block;
+
     background:#0057b8;
+
     color:white;
+
     padding:10px 24px;
+
     border-radius:25px;
+
     text-decoration:none;
+
     font-weight:600;
+
     transition:0.3s;
 }
 
 .game-btn:hover{
     background:#002b7f;
+
     transform:scale(1.05);
 }
+
 
 /* ================= TEACHERS ================= */
 
 .teachers{
     padding:80px 8%;
+
     background:#f5f9ff;
 }
 
 .teacher-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(230px,1fr));
+
     gap:25px;
 }
 
 .teacher-card{
     background:white;
+
     padding:30px 20px;
+
     border-radius:20px;
+
     text-align:center;
-    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.1);
+
     transition:0.4s;
 }
 
@@ -308,70 +429,108 @@ nav a:hover{
 .teacher-photo{
     width:150px;
     height:150px;
+
     border-radius:50%;
+
     object-fit:cover;
+
     border:5px solid #0057b8;
-    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,0.2);
+
     margin-bottom:18px;
 }
 
 .teacher-card h3{
     color:#0057b8;
+
     font-size:23px;
+
     margin-bottom:8px;
 }
 
 .teacher-card h4{
     color:#d4a017;
+
     margin-bottom:12px;
 }
 
 .teacher-card p{
     color:#555;
+
     font-size:15px;
+
     line-height:1.6;
 }
+
 
 /* ================= FOUNDER ================= */
 
 .founder{
     padding:80px 8%;
+
     background:white;
+
     text-align:center;
 }
 
 .founder-photo{
     width:160px;
     height:160px;
+
     border-radius:50%;
+
     object-fit:cover;
+
     display:block;
+
     margin:0 auto 20px;
+
     border:5px solid #0057b8;
-    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,0.2);
 }
 
 .founder-box{
     max-width:800px;
+
     margin:auto;
+
     padding:30px;
+
     border-radius:20px;
+
     background:#f5f9ff;
-    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,0.1);
 }
 
 .founder-box h3{
     color:#0057b8;
+
     font-size:28px;
+
     margin-bottom:15px;
 }
+
 
 /* ================= EVENTS ================= */
 
 .celebration{
     padding:80px 8%;
-    background:linear-gradient(135deg,#0057b8,#002b7f);
+
+    background:
+    linear-gradient(
+        135deg,
+        #0057b8,
+        #002b7f
+    );
+
     text-align:center;
+
     color:white;
 }
 
@@ -379,25 +538,36 @@ nav a:hover{
     font-size:40px;
 }
 
+
 /* ================= GALLERY ================= */
 
 .gallery{
     padding:80px 8%;
+
     background:white;
 }
 
 .gallery-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
     gap:25px;
 }
 
 .gallery-item{
     background:#f5f9ff;
+
     padding:15px;
+
     border-radius:20px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.1);
+
     overflow:hidden;
+
     transition:0.4s;
 }
 
@@ -408,31 +578,45 @@ nav a:hover{
 .gallery-item img,
 .gallery-item video{
     width:100%;
+
     height:220px;
+
     object-fit:cover;
+
     border-radius:15px;
+
     display:block;
 }
+
 
 /* ================= CONTACT ================= */
 
 .address{
     padding:80px 8%;
+
     text-align:center;
 }
 
 .address-box{
     background:white;
+
     padding:30px;
+
     border-radius:20px;
+
     max-width:700px;
+
     margin:auto;
-    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.1);
 }
 
 .application-form{
     display:flex;
+
     flex-direction:column;
+
     gap:15px;
 }
 
@@ -440,10 +624,15 @@ nav a:hover{
 .application-form select,
 .application-form textarea{
     width:100%;
+
     padding:14px;
+
     border:1px solid #ddd;
+
     border-radius:10px;
+
     font-size:16px;
+
     outline:none;
 }
 
@@ -457,21 +646,26 @@ nav a:hover{
     resize:vertical;
 }
 
+
 /* ================= WHATSAPP ================= */
 
 .whatsapp-float{
     position:fixed;
+
     width:62px;
     height:62px;
+
     bottom:25px;
     right:25px;
 
     background:#25D366;
+
     color:white;
 
     border-radius:50%;
 
     display:flex;
+
     align-items:center;
     justify-content:center;
 
@@ -479,7 +673,8 @@ nav a:hover{
 
     text-decoration:none;
 
-    box-shadow:0 5px 20px rgba(0,0,0,0.3);
+    box-shadow:
+    0 5px 20px rgba(0,0,0,0.3);
 
     z-index:9999;
 
@@ -488,17 +683,23 @@ nav a:hover{
 
 .whatsapp-float:hover{
     transform:scale(1.1);
+
     background:#20bd5a;
 }
+
 
 /* ================= FOOTER ================= */
 
 footer{
     background:#001b4d;
+
     color:white;
+
     text-align:center;
+
     padding:20px;
 }
+
 
 /* ================= MOBILE ================= */
 
@@ -506,7 +707,9 @@ footer{
 
     header{
         flex-direction:column;
+
         gap:15px;
+
         padding:12px 5%;
     }
 
@@ -517,17 +720,21 @@ footer{
 
     nav{
         display:flex;
+
         flex-wrap:wrap;
+
         justify-content:center;
     }
 
     nav a{
         margin:7px;
+
         font-size:14px;
     }
 
     .hero{
         min-height:70vh;
+
         padding:40px 15px;
     }
 
@@ -538,6 +745,7 @@ footer{
 
     .hero-name{
         font-size:23px;
+
         margin-top:12px;
     }
 
@@ -579,16 +787,21 @@ footer{
     .whatsapp-float{
         width:58px;
         height:58px;
+
         right:18px;
         bottom:18px;
+
         font-size:31px;
     }
+
 }
 
 </style>
 </head>
 
+
 <body>
+
 
 <!-- ================= HEADER ================= -->
 
@@ -596,31 +809,61 @@ footer{
 
 <div class="logo">
 
-<img src="AD Foundation Logo (1).png"
+<img
+src="AD Foundation Logo (1).png"
 alt="AD Foundation Logo">
 
 </div>
 
+
 <nav>
 
-<a href="#">Home</a>
-<a href="#courses">Courses</a>
-<a href="#games">Games</a>
-<a href="#teachers">Teachers</a>
-<a href="#founder">Founder</a>
-<a href="#events">Celebrations</a>
-<a href="#gallery">Gallery</a>
-<a href="#contact">Contact</a>
+<a href="#home">
+Home
+</a>
+
+<a href="#courses">
+Courses
+</a>
+
+<a href="#games">
+Games
+</a>
+
+<a href="#teachers">
+Teachers
+</a>
+
+<a href="#founder">
+Founder
+</a>
+
+<a href="#events">
+Celebrations
+</a>
+
+<a href="#gallery">
+Gallery
+</a>
+
+<a href="#contact">
+Contact
+</a>
 
 </nav>
 
 </header>
 
+
+
 <!-- ================= HERO ================= -->
 
-<section class="hero">
+<section
+class="hero"
+id="home">
 
 <div class="hero-content">
+
 
 <img
 src="learn-photo.png"
@@ -628,38 +871,58 @@ alt="AD Foundation Learn and Grow"
 class="learn-photo"
 >
 
+
 <h3 class="hero-name">
 Mr Abhya Luthra
 </h3>
 
+
 <h2>
 Learn • Grow • Succeed
 </h2>
+
 
 <p>
 Free NGO Classes for Students to Build a Bright Future.
 Education, Skills & Technology Under One Roof.
 </p>
 
-<a href="#contact" class="btn">
+
+<a
+href="#contact"
+class="btn">
+
 Join Now
+
 </a>
+
 
 </div>
 
 </section>
 
+
+
 <!-- ================= MAIN VIDEO ================= -->
 
-<section class="hero-video">
+<section
+class="hero-video">
 
 <h2 class="section-title">
 Our Video
 </h2>
 
-<video controls autoplay muted loop>
 
-<source src="intro.mp4" type="video/mp4">
+<video
+controls
+autoplay
+muted
+loop
+playsinline>
+
+<source
+src="intro.mp4"
+type="video/mp4">
 
 Your browser does not support the video tag.
 
@@ -667,22 +930,31 @@ Your browser does not support the video tag.
 
 </section>
 
+
+
 <!-- ================= COURSES ================= -->
 
-<section class="services" id="courses">
+<section
+class="services"
+id="courses">
 
 <h2 class="section-title">
 Our Courses
 </h2>
 
+
 <div class="cards">
+
 
 <div class="card">
 
-<img src="mathematics (1).png"
+<img
+src="mathematics (1).png"
 alt="Mathematics">
 
-<h3>Mathematics</h3>
+<h3>
+Mathematics
+</h3>
 
 <p>
 Strong foundation in Maths with expert guidance.
@@ -690,12 +962,16 @@ Strong foundation in Maths with expert guidance.
 
 </div>
 
+
 <div class="card">
 
-<img src="Science.png"
+<img
+src="Science.png"
 alt="Science">
 
-<h3>Science</h3>
+<h3>
+Science
+</h3>
 
 <p>
 Interactive learning and practical understanding.
@@ -703,12 +979,16 @@ Interactive learning and practical understanding.
 
 </div>
 
+
 <div class="card">
 
-<img src="English.png"
+<img
+src="English.png"
 alt="English">
 
-<h3>English</h3>
+<h3>
+English
+</h3>
 
 <p>
 Improve speaking, reading and writing skills.
@@ -716,12 +996,16 @@ Improve speaking, reading and writing skills.
 
 </div>
 
+
 <div class="card">
 
-<img src="Computer (1).png"
+<img
+src="Computer (1).png"
 alt="Computer">
 
-<h3>Computer</h3>
+<h3>
+Computer
+</h3>
 
 <p>
 Computer basics, MS Office and digital skills.
@@ -729,12 +1013,16 @@ Computer basics, MS Office and digital skills.
 
 </div>
 
+
 <div class="card">
 
-<img src="Graphic design.png"
+<img
+src="Graphic design.png"
 alt="Graphic Design">
 
-<h3>Graphic Design</h3>
+<h3>
+Graphic Design
+</h3>
 
 <p>
 Creative designing using modern tools.
@@ -742,12 +1030,16 @@ Creative designing using modern tools.
 
 </div>
 
+
 <div class="card">
 
-<img src="Artificial intelligence (1).png"
+<img
+src="Artificial intelligence (1).png"
 alt="Artificial Intelligence">
 
-<h3>Artificial Intelligence</h3>
+<h3>
+Artificial Intelligence
+</h3>
 
 <p>
 Learn future-ready AI concepts and technology.
@@ -755,111 +1047,161 @@ Learn future-ready AI concepts and technology.
 
 </div>
 
+
 </div>
 
 </section>
 
+
+
 <!-- ================= GAMES ================= -->
 
-<section class="games" id="games">
+<section
+class="games"
+id="games">
 
 <h2 class="section-title">
 Fun Learning Games 🎮
 </h2>
 
+
 <div class="games-grid">
+
 
 <div class="game-card">
 
-<img src="puzzle-game.png"
+<img
+src="puzzle-game.png"
 alt="Puzzle Game">
 
-<h3>🧩 Puzzle Game</h3>
+<h3>
+🧩 Puzzle Game
+</h3>
 
 <p>
 Improve your thinking and problem-solving skills.
 </p>
 
-<a href="#" class="game-btn">
+<a
+href="#"
+class="game-btn">
+
 Play Now
+
 </a>
 
 </div>
 
+
 <div class="game-card">
 
-<img src="quiz-game.png"
+<img
+src="quiz-game.png"
 alt="Quiz Game">
 
-<h3>🧠 Quiz Game</h3>
+<h3>
+🧠 Quiz Game
+</h3>
 
 <p>
 Test your knowledge with fun educational questions.
 </p>
 
-<a href="#" class="game-btn">
+<a
+href="#"
+class="game-btn">
+
 Play Now
+
 </a>
 
 </div>
 
+
 <div class="game-card">
 
-<img src="math-game.png"
+<img
+src="math-game.png"
 alt="Math Game">
 
-<h3>🔢 Math Game</h3>
+<h3>
+🔢 Math Game
+</h3>
 
 <p>
 Learn Mathematics through exciting challenges.
 </p>
 
-<a href="#" class="game-btn">
+<a
+href="#"
+class="game-btn">
+
 Play Now
+
 </a>
 
 </div>
 
+
 <div class="game-card">
 
-<img src="memory-game.png"
+<img
+src="memory-game.png"
 alt="Memory Game">
 
-<h3>🎯 Memory Game</h3>
+<h3>
+🎯 Memory Game
+</h3>
 
 <p>
 Train your memory with this fun learning game.
 </p>
 
-<a href="#" class="game-btn">
+<a
+href="#"
+class="game-btn">
+
 Play Now
+
 </a>
 
 </div>
+
 
 </div>
 
 </section>
 
+
+
 <!-- ================= TEACHERS ================= -->
 
-<section class="teachers" id="teachers">
+<section
+class="teachers"
+id="teachers">
 
 <h2 class="section-title">
 Our Teachers
 </h2>
 
+
 <div class="teacher-grid">
+
 
 <div class="teacher-card">
 
-<img src="teacher1.png"
+<img
+src="teacher1.png"
 class="teacher-photo"
 alt="Ms Jassy">
 
-<h3>Ms Jassy</h3>
+<h3>
+Ms Jassy
+</h3>
 
-<h4>Mathematics Teacher</h4>
+<h4>
+Mathematics Teacher
+</h4>
 
 <p>
 Helping students understand Mathematics
@@ -868,15 +1210,21 @@ with simple and practical learning methods.
 
 </div>
 
+
 <div class="teacher-card">
 
-<img src="teacher2.png"
+<img
+src="teacher2.png"
 class="teacher-photo"
 alt="Mrs Maninder">
 
-<h3>Mrs Maninder</h3>
+<h3>
+Mrs Maninder
+</h3>
 
-<h4>Science Teacher</h4>
+<h4>
+Science Teacher
+</h4>
 
 <p>
 Making Science interesting through
@@ -885,15 +1233,21 @@ interactive and practical learning.
 
 </div>
 
+
 <div class="teacher-card">
 
-<img src="teacher3.png"
+<img
+src="teacher3.png"
 class="teacher-photo"
 alt="Ms Preeti">
 
-<h3>Ms Preeti</h3>
+<h3>
+Ms Preeti
+</h3>
 
-<h4>English Teacher</h4>
+<h4>
+English Teacher
+</h4>
 
 <p>
 Helping students improve their speaking,
@@ -902,15 +1256,21 @@ reading and writing skills.
 
 </div>
 
+
 <div class="teacher-card">
 
-<img src="teacher4.png"
+<img
+src="teacher4.png"
 class="teacher-photo"
 alt="Ms Monika">
 
-<h3>Ms Monika</h3>
+<h3>
+Ms Monika
+</h3>
 
-<h4>Computer Teacher</h4>
+<h4>
+Computer Teacher
+</h4>
 
 <p>
 Teaching computer basics and
@@ -919,15 +1279,21 @@ digital skills for the future.
 
 </div>
 
+
 <div class="teacher-card">
 
-<img src="teacher5.png"
+<img
+src="teacher5.png"
 class="teacher-photo"
 alt="Mrs Laxmi">
 
-<h3>Mrs Laxmi</h3>
+<h3>
+Mrs Laxmi
+</h3>
 
-<h4>Graphic Design Teacher</h4>
+<h4>
+Graphic Design Teacher
+</h4>
 
 <p>
 Helping students learn creativity,
@@ -936,15 +1302,21 @@ design and modern digital tools.
 
 </div>
 
+
 <div class="teacher-card">
 
-<img src="teacher6.png"
+<img
+src="teacher6.png"
 class="teacher-photo"
 alt="Mr Raghav">
 
-<h3>Mr Raghav</h3>
+<h3>
+Mr Raghav
+</h3>
 
-<h4>AI Teacher</h4>
+<h4>
+AI Teacher
+</h4>
 
 <p>
 Introducing students to Artificial
@@ -953,21 +1325,29 @@ Intelligence and future technologies.
 
 </div>
 
+
 </div>
 
 </section>
 
+
+
 <!-- ================= FOUNDER ================= -->
 
-<section class="founder" id="founder">
+<section
+class="founder"
+id="founder">
 
-<img src="founder.png"
+<img
+src="founder.png"
 alt="Founder"
 class="founder-photo">
+
 
 <h2 class="section-title">
 Founder
 </h2>
+
 
 <div class="founder-box">
 
@@ -976,16 +1356,22 @@ Mrs. Rakhi Luthra
 </h3>
 
 <p>
-Founder of AD Foundation NGO, dedicated to providing free quality education and skill development opportunities for students.
+Founder of AD Foundation NGO, dedicated to providing
+free quality education and skill development
+opportunities for students.
 </p>
 
 </div>
 
 </section>
 
+
+
 <!-- ================= EVENTS ================= -->
 
-<section class="celebration" id="events">
+<section
+class="celebration"
+id="events">
 
 <h2>
 Celebrations & Events 🎉
@@ -995,134 +1381,221 @@ Celebrations & Events 🎉
 
 <p>
 At AD Foundation we celebrate birthdays, achievements,
-educational events and community programs to create a joyful learning environment.
+educational events and community programs to create
+a joyful learning environment.
 </p>
 
 </section>
 
+
+
 <!-- ================= GALLERY ================= -->
 
-<section class="gallery" id="gallery">
+<section
+class="gallery"
+id="gallery">
 
 <h2 class="section-title">
 Our Gallery
 </h2>
 
+
 <div class="gallery-grid">
 
+
+<!-- ================= PHOTO 1 ================= -->
+
 <div class="gallery-item">
-<img src="gallery1.png"
+
+<img
+src="gallery1.png"
 alt="Gallery Photo 1">
+
 </div>
 
+
+<!-- ================= PHOTO 2 ================= -->
+
 <div class="gallery-item">
-<img src="gallery2.png"
+
+<img
+src="gallery2.png"
 alt="Gallery Photo 2">
+
 </div>
 
+
+<!-- ================= PHOTO 3 ================= -->
+
 <div class="gallery-item">
-<img src="gallery3.png"
+
+<img
+src="gallery3.png"
 alt="Gallery Photo 3">
+
 </div>
 
+
+<!-- ================= PHOTO 4 ================= -->
+
 <div class="gallery-item">
-<img src="gallery4.png"
+
+<img
+src="gallery4.png"
 alt="Gallery Photo 4">
+
 </div>
 
+
+<!-- ================= PHOTO 5 ================= -->
+<!-- 5th VIDEO की जगह PNG PHOTO -->
+
 <div class="gallery-item">
-<img src="gallery5.png"
+
+<img
+src="gallery5.png"
 alt="Gallery Photo 5">
+
 </div>
 
+
+<!-- ================= PHOTO 6 ================= -->
+<!-- 6th VIDEO की जगह PNG PHOTO -->
+
 <div class="gallery-item">
-<img src="gallery6.png"
+
+<img
+src="gallery6.png"
 alt="Gallery Photo 6">
+
 </div>
 
-<div class="gallery-item">
-<video controls>
-<source src="gallery-video1.mp4"
-type="video/mp4">
-</video>
-</div>
+
+<!-- ================= VIDEO 1 ================= -->
 
 <div class="gallery-item">
-<video controls>
-<source src="gallery-video2.mp4"
+
+<video
+controls
+playsinline>
+
+<source
+src="gallery-video1.mp4"
 type="video/mp4">
+
+Your browser does not support the video tag.
+
 </video>
+
 </div>
 
-<div class="gallery-item">
-<video controls>
-<source src="gallery-video3.mp4"
-type="video/mp4">
-</video>
-</div>
+
+<!-- ================= VIDEO 2 ================= -->
 
 <div class="gallery-item">
-<video controls>
-<source src="gallery-video4.mp4"
+
+<video
+controls
+playsinline>
+
+<source
+src="gallery-video2.mp4"
 type="video/mp4">
+
+Your browser does not support the video tag.
+
 </video>
+
 </div>
 
-<div class="gallery-item">
-<video controls>
-<source src="gallery-video5.mp4"
-type="video/mp4">
-</video>
-</div>
+
+<!-- ================= VIDEO 3 ================= -->
 
 <div class="gallery-item">
-<video controls>
-<source src="gallery-video6.mp4"
+
+<video
+controls
+playsinline>
+
+<source
+src="gallery-video3.mp4"
 type="video/mp4">
+
+Your browser does not support the video tag.
+
 </video>
+
 </div>
+
+
+<!-- ================= VIDEO 4 ================= -->
+
+<div class="gallery-item">
+
+<video
+controls
+playsinline>
+
+<source
+src="gallery-video4.mp4"
+type="video/mp4">
+
+Your browser does not support the video tag.
+
+</video>
+
+</div>
+
 
 </div>
 
 </section>
 
+
+
 <!-- ================= APPLY FORM ================= -->
 
-<section class="address" id="contact">
+<section
+class="address"
+id="contact">
 
 <h2 class="section-title">
 Apply Now
 </h2>
 
+
 <div class="address-box">
+
 
 <form
 class="application-form"
-onsubmit="sendToWhatsApp(event)"
->
+onsubmit="sendToWhatsApp(event)">
+
 
 <input
 type="text"
 id="name"
 placeholder="Enter Your Name"
-required
->
+required>
+
 
 <input
 type="tel"
 id="mobile"
 placeholder="Enter Mobile Number"
-required
->
+required>
+
 
 <input
 type="text"
 id="className"
 placeholder="Enter Class"
-required
->
+required>
 
-<select id="course" required>
+
+<select
+id="course"
+required>
 
 <option value="">
 Select Course
@@ -1154,24 +1627,30 @@ Artificial Intelligence
 
 </select>
 
+
 <textarea
 id="message"
 rows="4"
 placeholder="Enter Your Message">
 </textarea>
 
+
 <button
 type="submit"
-class="btn"
->
+class="btn">
+
 Submit Application
+
 </button>
+
 
 </form>
 
 </div>
 
 </section>
+
+
 
 <!-- ================= WHATSAPP BUTTON ================= -->
 
@@ -1180,12 +1659,13 @@ href="https://wa.me/919315957454"
 class="whatsapp-float"
 target="_blank"
 rel="noopener"
-aria-label="Chat on WhatsApp"
->
+aria-label="Chat on WhatsApp">
 
 <i class="fa-brands fa-whatsapp"></i>
 
 </a>
+
+
 
 <!-- ================= FOOTER ================= -->
 
@@ -1201,6 +1681,8 @@ WhatsApp: +91 93159 57454
 
 </footer>
 
+
+
 <!-- ================= WHATSAPP SCRIPT ================= -->
 
 <script>
@@ -1209,25 +1691,32 @@ function sendToWhatsApp(event){
 
     event.preventDefault();
 
-    let name =
+
+    const name =
     document.getElementById("name").value;
 
-    let mobile =
+
+    const mobile =
     document.getElementById("mobile").value;
 
-    let className =
+
+    const className =
     document.getElementById("className").value;
 
-    let course =
+
+    const course =
     document.getElementById("course").value;
 
-    let message =
+
+    const message =
     document.getElementById("message").value;
 
-    let whatsappNumber =
+
+    const whatsappNumber =
     "919315957454";
 
-    let whatsappMessage =
+
+    const whatsappMessage =
     "New Application - AD Foundation NGO\n\n" +
 
     "Name: " + name + "\n" +
@@ -1240,11 +1729,13 @@ function sendToWhatsApp(event){
 
     "Message: " + message;
 
-    let url =
+
+    const url =
     "https://wa.me/" +
     whatsappNumber +
     "?text=" +
     encodeURIComponent(whatsappMessage);
+
 
     window.open(
         url,
@@ -1254,6 +1745,7 @@ function sendToWhatsApp(event){
 }
 
 </script>
+
 
 </body>
 </html>
