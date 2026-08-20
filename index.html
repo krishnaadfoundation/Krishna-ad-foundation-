@@ -517,6 +517,96 @@ nav a:hover{
 }
 
 
+/* ================= SPECIAL TRIBUTE ================= */
+
+.tribute-section{
+    padding:80px 8%;
+
+    background:#f5f9ff;
+
+    text-align:center;
+}
+
+.tribute-box{
+    max-width:850px;
+
+    margin:auto;
+
+    padding:35px;
+
+    background:white;
+
+    border-radius:22px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.12);
+
+    text-align:left;
+}
+
+.tribute-box h3{
+    text-align:center;
+
+    color:#0057b8;
+
+    font-size:28px;
+
+    margin-bottom:25px;
+}
+
+.tribute-box p{
+    color:#444;
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    margin-bottom:18px;
+}
+
+.voice-buttons{
+    text-align:center;
+
+    margin-top:30px;
+}
+
+.voice-btn{
+    border:none;
+
+    background:#0057b8;
+
+    color:white;
+
+    padding:13px 24px;
+
+    border-radius:30px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    margin:5px;
+
+    transition:0.3s;
+}
+
+.voice-btn:hover{
+    background:#002b7f;
+
+    transform:translateY(-2px);
+}
+
+.stop-btn{
+    background:#d4a017;
+}
+
+.stop-btn:hover{
+    background:#b8860b;
+}
+
+
 /* ================= EVENTS ================= */
 
 .celebration{
@@ -784,6 +874,22 @@ footer{
         height:180px;
     }
 
+    .tribute-section{
+        padding:60px 5%;
+    }
+
+    .tribute-box{
+        padding:25px 20px;
+    }
+
+    .tribute-box h3{
+        font-size:23px;
+    }
+
+    .tribute-box p{
+        font-size:15px;
+    }
+
     .whatsapp-float{
         width:58px;
         height:58px;
@@ -836,6 +942,10 @@ Teachers
 
 <a href="#founder">
 Founder
+</a>
+
+<a href="#tribute">
+Tribute
 </a>
 
 <a href="#events">
@@ -1075,20 +1185,12 @@ src="puzzle-game.png"
 alt="Puzzle Game">
 
 <h3>
-Scrabble 
+Scrabble
 </h3>
 
 <p>
 Improve your thinking and problem-solving skills.
 </p>
-
-<a
-href="#"
-class="game-btn">
-
-
-
-</a>
 
 </div>
 
@@ -1107,14 +1209,6 @@ Word Building
 Test your knowledge with fun educational questions.
 </p>
 
-<a
-href="#"
-class="game-btn">
-
-
-
-</a>
-
 </div>
 
 
@@ -1125,20 +1219,12 @@ src="math-game.png"
 alt="Math Game">
 
 <h3>
-carrom
+Carrom
 </h3>
 
 <p>
 Learn Mathematics through exciting challenges.
 </p>
-
-<a
-href="#"
-class="game-btn">
-
-
-
-</a>
 
 </div>
 
@@ -1150,20 +1236,12 @@ src="memory-game.png"
 alt="Memory Game">
 
 <h3>
-chess 
+Chess
 </h3>
 
 <p>
 Train your memory with this fun learning game.
 </p>
-
-<a
-href="#"
-class="game-btn">
-
-
-
-</a>
 
 </div>
 
@@ -1367,6 +1445,107 @@ opportunities for students.
 
 
 
+<!-- ================= SPECIAL TRIBUTE ================= -->
+
+<section
+class="tribute-section"
+id="tribute">
+
+<h2 class="section-title">
+Special Tribute
+</h2>
+
+
+<div class="tribute-box">
+
+<h3>
+In Memory of Abhya Luthra
+</h3>
+
+
+<div id="letterText">
+
+<p>
+We are very sad to share that <b>Abhya Luthra</b> is no longer with us.
+He passed away because of a serious illness.
+</p>
+
+
+<p>
+He was the elder son of his mother,
+<b>Mrs. Jakirot</b>.
+His family and everyone who knew him are very sad because of his passing.
+</p>
+
+
+<p>
+Abhya had a wish to start an NGO that could help people and children
+who need support. He wanted to provide
+<b>free education and help</b>
+to those who cannot afford it.
+</p>
+
+
+<p>
+To respect his wish and keep his memory alive,
+<b>AD Foundation</b> was started as a free NGO.
+</p>
+
+
+<p>
+Today, we are trying to continue his dream by helping people
+through education and support.
+</p>
+
+
+<p>
+We will always remember <b>Abhya Luthra</b>
+and his wish to help others.
+</p>
+
+
+<p>
+<b>May his soul rest in peace.</b>
+</p>
+
+
+<p>
+<b>With Respect,</b><br>
+<b>AD Foundation</b><br>
+Free Education • Help • Support
+</p>
+
+</div>
+
+
+<div class="voice-buttons">
+
+<button
+onclick="readLetter()"
+class="voice-btn">
+
+🔊 Read Letter
+
+</button>
+
+
+<button
+onclick="stopReading()"
+class="voice-btn stop-btn">
+
+⏹ Stop
+
+</button>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
 <!-- ================= EVENTS ================= -->
 
 <section
@@ -1403,8 +1582,6 @@ Our Gallery
 <div class="gallery-grid">
 
 
-<!-- ================= PHOTO 1 ================= -->
-
 <div class="gallery-item">
 
 <img
@@ -1413,8 +1590,6 @@ alt="Gallery Photo 1">
 
 </div>
 
-
-<!-- ================= PHOTO 2 ================= -->
 
 <div class="gallery-item">
 
@@ -1425,8 +1600,6 @@ alt="Gallery Photo 2">
 </div>
 
 
-<!-- ================= PHOTO 3 ================= -->
-
 <div class="gallery-item">
 
 <img
@@ -1435,8 +1608,6 @@ alt="Gallery Photo 3">
 
 </div>
 
-
-<!-- ================= PHOTO 4 ================= -->
 
 <div class="gallery-item">
 
@@ -1447,9 +1618,6 @@ alt="Gallery Photo 4">
 </div>
 
 
-<!-- ================= PHOTO 5 ================= -->
-<!-- 5th VIDEO की जगह PNG PHOTO -->
-
 <div class="gallery-item">
 
 <img
@@ -1459,9 +1627,6 @@ alt="Gallery Photo 5">
 </div>
 
 
-<!-- ================= PHOTO 6 ================= -->
-<!-- 6th VIDEO की जगह PNG PHOTO -->
-
 <div class="gallery-item">
 
 <img
@@ -1470,8 +1635,6 @@ alt="Gallery Photo 6">
 
 </div>
 
-
-<!-- ================= VIDEO 1 ================= -->
 
 <div class="gallery-item">
 
@@ -1490,8 +1653,6 @@ Your browser does not support the video tag.
 </div>
 
 
-<!-- ================= VIDEO 2 ================= -->
-
 <div class="gallery-item">
 
 <video
@@ -1509,8 +1670,6 @@ Your browser does not support the video tag.
 </div>
 
 
-<!-- ================= VIDEO 3 ================= -->
-
 <div class="gallery-item">
 
 <video
@@ -1527,8 +1686,6 @@ Your browser does not support the video tag.
 
 </div>
 
-
-<!-- ================= VIDEO 4 ================= -->
 
 <div class="gallery-item">
 
@@ -1691,30 +1848,23 @@ function sendToWhatsApp(event){
 
     event.preventDefault();
 
-
     const name =
     document.getElementById("name").value;
-
 
     const mobile =
     document.getElementById("mobile").value;
 
-
     const className =
     document.getElementById("className").value;
-
 
     const course =
     document.getElementById("course").value;
 
-
     const message =
     document.getElementById("message").value;
 
-
     const whatsappNumber =
     "919315957454";
-
 
     const whatsappMessage =
     "New Application - AD Foundation NGO\n\n" +
@@ -1729,13 +1879,11 @@ function sendToWhatsApp(event){
 
     "Message: " + message;
 
-
     const url =
     "https://wa.me/" +
     whatsappNumber +
     "?text=" +
     encodeURIComponent(whatsappMessage);
-
 
     window.open(
         url,
@@ -1743,6 +1891,88 @@ function sendToWhatsApp(event){
     );
 
 }
+
+
+/* ================= LETTER VOICE ================= */
+
+function readLetter(){
+
+    if (!("speechSynthesis" in window)) {
+
+        alert("Sorry, your browser does not support voice reading.");
+
+        return;
+    }
+
+    window.speechSynthesis.cancel();
+
+    const text =
+    document.getElementById("letterText").innerText;
+
+    const speech =
+    new SpeechSynthesisUtterance(text);
+
+    speech.lang = "en-US";
+
+    speech.rate = 0.9;
+
+    speech.pitch = 0.85;
+
+    speech.volume = 1;
+
+    const voices =
+    window.speechSynthesis.getVoices();
+
+
+    /* Prefer an English male voice */
+
+    const maleVoice =
+    voices.find(function(voice){
+
+        const voiceInfo =
+        (voice.name + " " + voice.lang).toLowerCase();
+
+        return (
+            voiceInfo.includes("male") ||
+            voiceInfo.includes("david") ||
+            voiceInfo.includes("mark") ||
+            voiceInfo.includes("daniel") ||
+            voiceInfo.includes("alex") ||
+            voiceInfo.includes("guy")
+        );
+
+    });
+
+
+    if(maleVoice){
+
+        speech.voice = maleVoice;
+
+    }
+
+
+    window.speechSynthesis.speak(speech);
+
+}
+
+
+/* ================= STOP VOICE ================= */
+
+function stopReading(){
+
+    window.speechSynthesis.cancel();
+
+}
+
+
+/* ================= LOAD VOICES ================= */
+
+window.speechSynthesis.onvoiceschanged =
+function(){
+
+    window.speechSynthesis.getVoices();
+
+};
 
 </script>
 
