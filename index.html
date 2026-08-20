@@ -8,7 +8,6 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<!-- WhatsApp Icon -->
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
@@ -62,16 +61,19 @@ nav a:hover{
     color:#ffd700;
 }
 
-
 /* ================= HERO ================= */
 
 .hero{
     background:
-    linear-gradient(rgba(0,43,127,0.8),rgba(0,43,127,0.8)),
-    url('hero.jpg');
+    linear-gradient(
+        rgba(0,43,127,0.8),
+        rgba(0,43,127,0.8)
+    ),
+    url('hero.png');
 
     background-size:cover;
     background-position:center;
+    background-repeat:no-repeat;
 
     min-height:80vh;
 
@@ -87,26 +89,18 @@ nav a:hover{
     max-width:800px;
 }
 
-
 /* ================= CIRCLE PHOTO ================= */
 
 .learn-photo{
     width:180px;
     height:180px;
-
     display:block;
     margin:0 auto;
-
     object-fit:cover;
-
     border-radius:50%;
-
     border:6px solid white;
-
-    box-shadow:
-        0 8px 25px rgba(0,0,0,0.35);
+    box-shadow:0 8px 25px rgba(0,0,0,0.35);
 }
-
 
 /* ================= NAME ================= */
 
@@ -124,7 +118,6 @@ nav a:hover{
     box-shadow:0 5px 20px rgba(0,87,184,0.4);
 }
 
-
 /* ================= HERO TEXT ================= */
 
 .hero h2{
@@ -138,7 +131,6 @@ nav a:hover{
     color:white;
     margin-bottom:25px;
 }
-
 
 /* ================= BUTTON ================= */
 
@@ -158,7 +150,6 @@ nav a:hover{
     background:#b8860b;
 }
 
-
 /* ================= VIDEO ================= */
 
 .hero-video{
@@ -177,7 +168,6 @@ nav a:hover{
     box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
 
-
 /* ================= SECTION TITLE ================= */
 
 .section-title{
@@ -186,7 +176,6 @@ nav a:hover{
     color:#002b7f;
     margin-bottom:40px;
 }
-
 
 /* ================= COURSES ================= */
 
@@ -225,7 +214,6 @@ nav a:hover{
     color:#0057b8;
     margin-bottom:10px;
 }
-
 
 /* ================= GAMES ================= */
 
@@ -291,7 +279,6 @@ nav a:hover{
     transform:scale(1.05);
 }
 
-
 /* ================= TEACHERS ================= */
 
 .teachers{
@@ -345,7 +332,6 @@ nav a:hover{
     line-height:1.6;
 }
 
-
 /* ================= FOUNDER ================= */
 
 .founder{
@@ -380,7 +366,6 @@ nav a:hover{
     margin-bottom:15px;
 }
 
-
 /* ================= EVENTS ================= */
 
 .celebration{
@@ -393,7 +378,6 @@ nav a:hover{
 .celebration h2{
     font-size:40px;
 }
-
 
 /* ================= GALLERY ================= */
 
@@ -430,8 +414,7 @@ nav a:hover{
     display:block;
 }
 
-
-/* ================= CONTACT / FORM ================= */
+/* ================= CONTACT ================= */
 
 .address{
     padding:80px 8%;
@@ -474,8 +457,7 @@ nav a:hover{
     resize:vertical;
 }
 
-
-/* ================= WHATSAPP BUTTON ================= */
+/* ================= WHATSAPP ================= */
 
 .whatsapp-float{
     position:fixed;
@@ -509,7 +491,6 @@ nav a:hover{
     background:#20bd5a;
 }
 
-
 /* ================= FOOTER ================= */
 
 footer{
@@ -518,7 +499,6 @@ footer{
     text-align:center;
     padding:20px;
 }
-
 
 /* ================= MOBILE ================= */
 
@@ -603,14 +583,12 @@ footer{
         bottom:18px;
         font-size:31px;
     }
-
 }
 
 </style>
 </head>
 
 <body>
-
 
 <!-- ================= HEADER ================= -->
 
@@ -637,7 +615,6 @@ alt="AD Foundation Logo">
 </nav>
 
 </header>
-
 
 <!-- ================= HERO ================= -->
 
@@ -672,7 +649,6 @@ Join Now
 
 </section>
 
-
 <!-- ================= MAIN VIDEO ================= -->
 
 <section class="hero-video">
@@ -690,7 +666,6 @@ Your browser does not support the video tag.
 </video>
 
 </section>
-
 
 <!-- ================= COURSES ================= -->
 
@@ -715,7 +690,6 @@ Strong foundation in Maths with expert guidance.
 
 </div>
 
-
 <div class="card">
 
 <img src="Science.png"
@@ -728,7 +702,6 @@ Interactive learning and practical understanding.
 </p>
 
 </div>
-
 
 <div class="card">
 
@@ -743,7 +716,6 @@ Improve speaking, reading and writing skills.
 
 </div>
 
-
 <div class="card">
 
 <img src="Computer (1).png"
@@ -757,7 +729,6 @@ Computer basics, MS Office and digital skills.
 
 </div>
 
-
 <div class="card">
 
 <img src="Graphic design.png"
@@ -770,7 +741,6 @@ Creative designing using modern tools.
 </p>
 
 </div>
-
 
 <div class="card">
 
@@ -789,7 +759,6 @@ Learn future-ready AI concepts and technology.
 
 </section>
 
-
 <!-- ================= GAMES ================= -->
 
 <section class="games" id="games">
@@ -800,19 +769,12 @@ Fun Learning Games 🎮
 
 <div class="games-grid">
 
-
-<!-- GAME 1 -->
-
 <div class="game-card">
 
-<img
-src="puzzle-game.png"
-alt="Puzzle Game"
->
+<img src="puzzle-game.png"
+alt="Puzzle Game">
 
-<h3>
-🧩 Puzzle Game
-</h3>
+<h3>🧩 Puzzle Game</h3>
 
 <p>
 Improve your thinking and problem-solving skills.
@@ -824,19 +786,12 @@ Play Now
 
 </div>
 
-
-<!-- GAME 2 -->
-
 <div class="game-card">
 
-<img
-src="quiz-game.png"
-alt="Quiz Game"
->
+<img src="quiz-game.png"
+alt="Quiz Game">
 
-<h3>
-🧠 Quiz Game
-</h3>
+<h3>🧠 Quiz Game</h3>
 
 <p>
 Test your knowledge with fun educational questions.
@@ -848,19 +803,12 @@ Play Now
 
 </div>
 
-
-<!-- GAME 3 -->
-
 <div class="game-card">
 
-<img
-src="math-game.png"
-alt="Math Game"
->
+<img src="math-game.png"
+alt="Math Game">
 
-<h3>
-🔢 Math Game
-</h3>
+<h3>🔢 Math Game</h3>
 
 <p>
 Learn Mathematics through exciting challenges.
@@ -872,19 +820,12 @@ Play Now
 
 </div>
 
-
-<!-- GAME 4 -->
-
 <div class="game-card">
 
-<img
-src="memory-game.png"
-alt="Memory Game"
->
+<img src="memory-game.png"
+alt="Memory Game">
 
-<h3>
-🎯 Memory Game
-</h3>
+<h3>🎯 Memory Game</h3>
 
 <p>
 Train your memory with this fun learning game.
@@ -896,11 +837,9 @@ Play Now
 
 </div>
 
-
 </div>
 
 </section>
-
 
 <!-- ================= TEACHERS ================= -->
 
@@ -912,11 +851,11 @@ Our Teachers
 
 <div class="teacher-grid">
 
-
 <div class="teacher-card">
 
 <img src="teacher1.png"
-class="teacher-photo">
+class="teacher-photo"
+alt="Ms Jassy">
 
 <h3>Ms Jassy</h3>
 
@@ -929,13 +868,13 @@ with simple and practical learning methods.
 
 </div>
 
-
 <div class="teacher-card">
 
 <img src="teacher2.png"
-class="teacher-photo">
+class="teacher-photo"
+alt="Mrs Maninder">
 
-<h3>Mrs maninder</h3>
+<h3>Mrs Maninder</h3>
 
 <h4>Science Teacher</h4>
 
@@ -946,13 +885,13 @@ interactive and practical learning.
 
 </div>
 
-
 <div class="teacher-card">
 
 <img src="teacher3.png"
-class="teacher-photo">
+class="teacher-photo"
+alt="Ms Preeti">
 
-<h3>Ms preeti</h3>
+<h3>Ms Preeti</h3>
 
 <h4>English Teacher</h4>
 
@@ -963,11 +902,11 @@ reading and writing skills.
 
 </div>
 
-
 <div class="teacher-card">
 
 <img src="teacher4.png"
-class="teacher-photo">
+class="teacher-photo"
+alt="Ms Monika">
 
 <h3>Ms Monika</h3>
 
@@ -980,11 +919,11 @@ digital skills for the future.
 
 </div>
 
-
 <div class="teacher-card">
 
 <img src="teacher5.png"
-class="teacher-photo">
+class="teacher-photo"
+alt="Mrs Laxmi">
 
 <h3>Mrs Laxmi</h3>
 
@@ -997,11 +936,11 @@ design and modern digital tools.
 
 </div>
 
-
 <div class="teacher-card">
 
 <img src="teacher6.png"
-class="teacher-photo">
+class="teacher-photo"
+alt="Mr Raghav">
 
 <h3>Mr Raghav</h3>
 
@@ -1017,7 +956,6 @@ Intelligence and future technologies.
 </div>
 
 </section>
-
 
 <!-- ================= FOUNDER ================= -->
 
@@ -1045,7 +983,6 @@ Founder of AD Foundation NGO, dedicated to providing free quality education and 
 
 </section>
 
-
 <!-- ================= EVENTS ================= -->
 
 <section class="celebration" id="events">
@@ -1063,7 +1000,6 @@ educational events and community programs to create a joyful learning environmen
 
 </section>
 
-
 <!-- ================= GALLERY ================= -->
 
 <section class="gallery" id="gallery">
@@ -1073,7 +1009,6 @@ Our Gallery
 </h2>
 
 <div class="gallery-grid">
-
 
 <div class="gallery-item">
 <img src="gallery1.png"
@@ -1104,7 +1039,6 @@ alt="Gallery Photo 5">
 <img src="gallery6.png"
 alt="Gallery Photo 6">
 </div>
-
 
 <div class="gallery-item">
 <video controls>
@@ -1151,7 +1085,6 @@ type="video/mp4">
 </div>
 
 </section>
-
 
 <!-- ================= APPLY FORM ================= -->
 
@@ -1240,8 +1173,7 @@ Submit Application
 
 </section>
 
-
-<!-- ================= FLOATING WHATSAPP ================= -->
+<!-- ================= WHATSAPP BUTTON ================= -->
 
 <a
 href="https://wa.me/919315957454"
@@ -1254,7 +1186,6 @@ aria-label="Chat on WhatsApp"
 <i class="fa-brands fa-whatsapp"></i>
 
 </a>
-
 
 <!-- ================= FOOTER ================= -->
 
@@ -1269,7 +1200,6 @@ WhatsApp: +91 93159 57454
 </p>
 
 </footer>
-
 
 <!-- ================= WHATSAPP SCRIPT ================= -->
 
@@ -1294,10 +1224,8 @@ function sendToWhatsApp(event){
     let message =
     document.getElementById("message").value;
 
-
     let whatsappNumber =
     "919315957454";
-
 
     let whatsappMessage =
     "New Application - AD Foundation NGO\n\n" +
@@ -1312,13 +1240,11 @@ function sendToWhatsApp(event){
 
     "Message: " + message;
 
-
     let url =
     "https://wa.me/" +
     whatsappNumber +
     "?text=" +
     encodeURIComponent(whatsappMessage);
-
 
     window.open(
         url,
@@ -1328,7 +1254,6 @@ function sendToWhatsApp(event){
 }
 
 </script>
-
 
 </body>
 </html>
