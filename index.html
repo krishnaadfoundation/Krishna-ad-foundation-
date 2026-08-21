@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,6 +13,8 @@
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <style>
+
+/* ================= GENERAL ================= */
 
 *{
     margin:0;
@@ -28,6 +31,7 @@ body{
     background:#f5f9ff;
     color:#222;
 }
+
 
 /* ================= HEADER ================= */
 
@@ -71,6 +75,7 @@ nav a{
 nav a:hover{
     color:#ffd700;
 }
+
 
 /* ================= HERO ================= */
 
@@ -151,12 +156,15 @@ nav a:hover{
     text-decoration:none;
     font-weight:600;
     transition:0.3s;
+    border:none;
+    cursor:pointer;
 }
 
 .btn:hover{
     background:#b8860b;
     transform:translateY(-3px);
 }
+
 
 /* ================= SECTION TITLE ================= */
 
@@ -166,6 +174,7 @@ nav a:hover{
     color:#002b7f;
     margin-bottom:40px;
 }
+
 
 /* ================= MAIN VIDEO ================= */
 
@@ -182,687 +191,6 @@ nav a:hover{
     box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
 
-/* ================= MOBILE ================= */
-
-@media(max-width:768px){
-
-    header{
-        flex-direction:column;
-        gap:15px;
-    }
-
-    .logo img{
-        width:75px;
-        height:75px;
-    }
-
-    nav a{
-        margin:7px;
-        font-size:14px;
-    }
-
-    .hero h2{
-        font-size:35px;
-    }
-
-    .hero p{
-        font-size:16px;
-    }
-
-    .hero-name{
-        font-size:22px;
-    }
-
-    .learn-photo{
-        width:150px;
-        height:150px;
-    }
-
-    .section-title{
-        font-size:30px;
-    }
-}
-</style>
-</head>
-
-<body>
-
-<!-- ================= HEADER ================= -->
-
-<header>
-
-<div class="logo">
-<img src="AD Foundation Logo (1).png"
-alt="AD Foundation Logo">
-</div>
-
-<nav>
-
-<a href="#home">Home</a>
-
-<a href="#courses">Courses</a>
-
-<a href="#games">Games</a>
-
-<a href="#teachers">Teachers</a>
-
-<a href="#founder">Founder</a>
-
-<a href="#our-story">Our Story</a>
-
-<a href="#events">Events</a>
-
-<a href="#gallery">Gallery</a>
-
-<a href="#contact">Contact</a>
-
-</nav>
-
-</header>
-
-<!-- ================= HERO ================= -->
-
-<section class="hero" id="home">
-
-<div class="hero-content">
-
-<img
-src="learn-photo.png"
-alt="AD Foundation"
-class="learn-photo">
-
-<h3 class="hero-name">
-Mr Abhya Luthra
-</h3>
-
-<h2>
-Learn • Grow • Succeed
-</h2>
-
-<p>
-Free NGO Classes for Students to Build a Bright Future.
-Education, Skills and Technology Under One Roof.
-</p>
-
-<a href="#contact" class="btn">
-Join Now
-</a>
-
-</div>
-
-</section>
-
-<!-- ================= MAIN VIDEO ================= -->
-
-<section class="hero-video">
-
-<h2 class="section-title">
-Our Video
-</h2>
-
-<video controls autoplay muted loop playsinline>
-
-<source src="intro.mp4"
-type="video/mp4">
-
-Your browser does not support the video tag.
-
-</video>
-
-</section>
-
-<!-- ================= COURSES ================= -->
-
-<section class="services" id="courses">
-
-<h2 class="section-title">
-Our Courses
-</h2>
-
-<div class="cards">
-
-<div class="card">
-<img src="mathematics (1).png" alt="Mathematics">
-<h3>Mathematics</h3>
-<p>Strong foundation in Maths with expert guidance.</p>
-</div>
-
-<div class="card">
-<img src="Science.png" alt="Science">
-<h3>Science</h3>
-<p>Interactive learning and practical understanding.</p>
-</div>
-
-<div class="card">
-<img src="English.png" alt="English">
-<h3>English</h3>
-<p>Improve speaking, reading and writing skills.</p>
-</div>
-
-<div class="card">
-<img src="Computer (1).png" alt="Computer">
-<h3>Computer</h3>
-<p>Computer basics, MS Office and digital skills.</p>
-</div>
-
-<div class="card">
-<img src="Graphic design.png" alt="Graphic Design">
-<h3>Graphic Design</h3>
-<p>Creative designing using modern tools.</p>
-</div>
-
-<div class="card">
-<img src="Artificial intelligence (1).png"
-alt="Artificial Intelligence">
-<h3>Artificial Intelligence</h3>
-<p>Learn future-ready AI concepts and technology.</p>
-</div>
-
-</div>
-</section>
-
-
-<!-- ================= GAMES ================= -->
-
-<section class="games" id="games">
-
-<h2 class="section-title">
-Fun Learning Games 🎮
-</h2>
-
-<div class="games-grid">
-
-<div class="game-card">
-<img src="puzzle-game.png" alt="Scrabble">
-<h3>Scrabble</h3>
-<p>
-Improve your thinking and problem-solving skills.
-</p>
-<a href="#" class="game-btn"></a>
-</div>
-
-<div class="game-card">
-<img src="quiz-game.png" alt="Word Building">
-<h3>Word Building</h3>
-<p>
-Improve your vocabulary with fun educational activities.
-</p>
-<a href="#" class="game-btn"></a>
-</div>
-
-<div class="game-card">
-<img src="math-game.png" alt="Carrom">
-<h3>Carrom</h3>
-<p>
-Enjoy a fun game and improve your concentration.
-</p>
-<a href="#" class="game-btn"></a>
-</div>
-
-<div class="game-card">
-<img src="memory-game.png" alt="Chess">
-<h3>Chess</h3>
-<p>
-Improve your thinking, planning and concentration.
-</p>
-<a href="#" class="game-btn"></a>
-</div>
-
-</div>
-</section><!-- ================= TEACHERS ================= -->
-
-<section class="teachers" id="teachers">
-
-<h2 class="section-title">
-Our Teachers
-</h2>
-
-<div class="teacher-grid">
-
-<div class="teacher-card">
-
-<img
-src="teacher1.png"
-class="teacher-photo"
-alt="Ms Jassy">
-
-<h3>Ms Jassy</h3>
-
-<h4>Mathematics Teacher</h4>
-
-<p>
-Helping students understand Mathematics
-with simple and practical learning methods.
-</p>
-
-</div>
-
-
-<div class="teacher-card">
-
-<img
-src="teacher2.png"
-class="teacher-photo"
-alt="Mrs Maninder">
-
-<h3>Mrs Maninder</h3>
-
-<h4>Science Teacher</h4>
-
-<p>
-Making Science interesting through
-interactive and practical learning.
-</p>
-
-</div>
-
-
-<div class="teacher-card">
-
-<img
-src="teacher3.png"
-class="teacher-photo"
-alt="Ms Preeti">
-
-<h3>Ms Preeti</h3>
-
-<h4>English Teacher</h4>
-
-<p>
-Helping students improve their speaking,
-reading and writing skills.
-</p>
-
-</div>
-
-
-<div class="teacher-card">
-
-<img
-src="teacher4.png"
-class="teacher-photo"
-alt="Ms Monika">
-
-<h3>Ms Monika</h3>
-
-<h4>Computer Teacher</h4>
-
-<p>
-Teaching computer basics and
-digital skills for the future.
-</p>
-
-</div>
-
-
-<div class="teacher-card">
-
-<img
-src="teacher5.png"
-class="teacher-photo"
-alt="Mrs Laxmi">
-
-<h3>Mrs Laxmi</h3>
-
-<h4>Graphic Design Teacher</h4>
-
-<p>
-Helping students learn creativity,
-design and modern digital tools.
-</p>
-
-</div>
-
-
-<div class="teacher-card">
-
-<img
-src="teacher6.png"
-class="teacher-photo"
-alt="Mr Raghav">
-
-<h3>Mr Raghav</h3>
-
-<h4>AI Teacher</h4>
-
-<p>
-Introducing students to Artificial
-Intelligence and future technologies.
-</p>
-
-</div>
-
-</div>
-</section>
-
-
-<!-- ================= FOUNDER ================= -->
-
-<section class="founder" id="founder">
-
-<img
-src="founder.png"
-alt="Founder of AD Foundation"
-class="founder-photo">
-
-<h2 class="section-title">
-Founder
-</h2>
-
-<div class="founder-box">
-
-<h3>
-Mrs. Rakhi Luthra
-</h3>
-
-<p>
-Founder of AD Foundation NGO, dedicated to providing
-free education and skill development opportunities
-for students.
-</p>
-
-</div>
-
-</section>
-
-
-<!-- ================= OUR STORY ================= -->
-
-<section class="tribute-section" id="our-story">
-
-<h2 class="section-title">
-Our Story
-</h2>
-
-<div class="tribute-box">
-
-<h3>
-In Loving Memory of Avay Luthra
-</h3>
-
-<div id="storyText">
-
-<p>
-AD Foundation is a free NGO.
-</p>
-
-<p>
-This NGO is made in the loving memory of
-<b>Abhya Luthra</b>.
-Abhya brought happiness to his family and people around him.
-</p>
-
-<p>
-After Abhya passed away, his mother
-<b>Rakhi Luthra</b>
-wanted to keep his memories alive.
-She wanted to do something good for children and society.
-Because of this dream, AD Foundation was started.
-</p>
-
-<p>
-The main goal of AD Foundation is to help children get
-education and learn new skills for free.
-Here, children can learn English, Mathematics, Science,
-Computer, Graphic Design and Artificial Intelligence
-without any cost.
-</p>
-
-<p>
-Every child has a dream.
-AD Foundation wants to help children achieve their dreams
-and build a bright future.
-</p>
-
-<p>
-Today, this foundation is working with love, care and
-dedication in the memory of Abhya Luthra.
-</p>
-
-<p>
-<b>
-"A small step for education, a big tribute to Abhya Luthra."
-</b>
-</p>
-
-</div>
-
-
-<!-- ================= VOICE CONTROLS ================= -->
-
-<div class="voice-buttons">
-
-<button
-onclick="playStory()"
-class="voice-btn">
-
-🔊 Play Story
-
-</button>
-
-
-<button
-onclick="stopStory()"
-class="voice-btn stop-btn">
-
-⏹ Stop Voice
-
-</button>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ================= EVENTS ================= -->
-
-<section class="celebration" id="events">
-
-<h2>Celebrations & Events 🎉</h2>
-
-<p>
-At AD Foundation we celebrate birthdays, achievements,
-educational events and community programs to create
-a joyful learning environment.
-</p>
-
-</section>
-
-
-<!-- ================= GALLERY ================= -->
-
-<section class="gallery" id="gallery">
-
-<h2 class="section-title">
-Our Gallery
-</h2>
-
-<div class="gallery-grid">
-
-<div class="gallery-item">
-<img src="gallery1.png" alt="Gallery Photo 1">
-</div>
-
-<div class="gallery-item">
-<img src="gallery2.png" alt="Gallery Photo 2">
-</div>
-
-<div class="gallery-item">
-<img src="gallery3.png" alt="Gallery Photo 3">
-</div>
-
-<div class="gallery-item">
-<img src="gallery4.png" alt="Gallery Photo 4">
-</div>
-
-<div class="gallery-item">
-<img src="gallery5.png" alt="Gallery Photo 5">
-</div>
-
-<div class="gallery-item">
-<img src="gallery6.png" alt="Gallery Photo 6">
-</div>
-
-<div class="gallery-item">
-
-<video controls playsinline>
-<source src="gallery-video1.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-
-</div>
-
-<div class="gallery-item">
-
-<video controls playsinline>
-<source src="gallery-video2.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-
-</div>
-
-<div class="gallery-item">
-
-<video controls playsinline>
-<source src="gallery-video3.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-
-</div>
-
-<div class="gallery-item">
-
-<video controls playsinline>
-<source src="gallery-video4.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ================= APPLY FORM ================= -->
-
-<section class="address" id="contact">
-
-<h2 class="section-title">
-Apply Now
-</h2>
-
-<div class="address-box">
-
-<form
-class="application-form"
-onsubmit="sendToWhatsApp(event)">
-
-<input
-type="text"
-id="name"
-placeholder="Enter Your Name"
-required>
-
-<input
-type="tel"
-id="mobile"
-placeholder="Enter Mobile Number"
-required>
-
-<input
-type="text"
-id="className"
-placeholder="Enter Class"
-required>
-
-<select id="course" required>
-
-<option value="">
-Select Course
-</option>
-
-<option value="Mathematics">
-Mathematics
-</option>
-
-<option value="Science">
-Science
-</option>
-
-<option value="English">
-English
-</option>
-
-<option value="Computer">
-Computer
-</option>
-
-<option value="Graphic Design">
-Graphic Design
-</option>
-
-<option value="Artificial Intelligence">
-Artificial Intelligence
-</option>
-
-</select>
-
-<textarea
-id="message"
-rows="4"
-placeholder="Enter Your Message">
-</textarea>
-
-<button
-type="submit"
-class="btn">
-
-Submit Application
-
-</button>
-
-</form>
-
-</div>
-
-</section>
-
-
-<!-- ================= WHATSAPP ================= -->
-
-<a
-href="https://wa.me/919315957454"
-class="whatsapp-float"
-target="_blank"
-rel="noopener"
-aria-label="Chat on WhatsApp">
-
-<i class="fa-brands fa-whatsapp"></i>
-
-</a>
-
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-<p>
-© 2026 AD Foundation NGO | Learn • Grow • Succeed
-</p>
-
-<p style="margin-top:8px;">
-WhatsApp: +91 93159 57454
-</p>
-
-</footer>
-
-
-<!-- ================= EXTRA CSS ================= -->
-
-<style>
 
 /* ================= COURSES ================= */
 
@@ -950,20 +278,6 @@ WhatsApp: +91 93159 57454
     font-size:14px;
     line-height:1.6;
     margin-bottom:15px;
-}
-
-.game-btn{
-    display:inline-block;
-    background:#0057b8;
-    color:white;
-    padding:10px 24px;
-    border-radius:25px;
-    text-decoration:none;
-    font-weight:600;
-}
-
-.game-btn:hover{
-    background:#002b7f;
 }
 
 
@@ -1056,7 +370,7 @@ WhatsApp: +91 93159 57454
 }
 
 
-/* ================= STORY ================= */
+/* ================= OUR STORY ================= */
 
 .tribute-section{
     padding:80px 8%;
@@ -1098,18 +412,30 @@ WhatsApp: +91 93159 57454
 
 .voice-btn{
     border:none;
-    background:#0057b8;
     color:white;
-    padding:13px 24px;
+    padding:13px 25px;
     border-radius:30px;
     font-size:16px;
     font-weight:600;
     cursor:pointer;
-    margin:5px;
+    margin:6px;
     transition:0.3s;
 }
 
-.voice-btn:hover{
+.hindi-btn{
+    background:#ff7a00;
+}
+
+.hindi-btn:hover{
+    background:#e66d00;
+    transform:translateY(-2px);
+}
+
+.english-btn{
+    background:#0057b8;
+}
+
+.english-btn:hover{
     background:#002b7f;
     transform:translateY(-2px);
 }
@@ -1120,6 +446,7 @@ WhatsApp: +91 93159 57454
 
 .stop-btn:hover{
     background:#b02a37;
+    transform:translateY(-2px);
 }
 
 
@@ -1252,9 +579,48 @@ footer{
     color:white;
     text-align:center;
     padding:20px;
-}/* ================= MOBILE ================= */
+}
+
+
+/* ================= MOBILE ================= */
 
 @media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .logo img{
+        width:75px;
+        height:75px;
+    }
+
+    nav a{
+        margin:7px;
+        font-size:14px;
+    }
+
+    .hero h2{
+        font-size:35px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .hero-name{
+        font-size:22px;
+    }
+
+    .learn-photo{
+        width:150px;
+        height:150px;
+    }
+
+    .section-title{
+        font-size:30px;
+    }
 
     .services,
     .games,
@@ -1275,10 +641,6 @@ footer{
 
     .tribute-box h3{
         font-size:23px;
-    }
-
-    .game-card img{
-        height:180px;
     }
 
     .gallery-item img,
@@ -1312,10 +674,902 @@ footer{
 
 </style>
 
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="logo">
+
+<img
+src="AD Foundation Logo (1).png"
+alt="AD Foundation Logo">
+
+</div>
+
+
+<nav>
+
+<a href="#home">Home</a>
+
+<a href="#courses">Courses</a>
+
+<a href="#games">Games</a>
+
+<a href="#teachers">Teachers</a>
+
+<a href="#founder">Founder</a>
+
+<a href="#our-story">Our Story</a>
+
+<a href="#events">Events</a>
+
+<a href="#gallery">Gallery</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<img
+src="learn-photo.png"
+alt="AD Foundation"
+class="learn-photo">
+
+
+<h3 class="hero-name">
+Mr Abhya Luthra
+</h3>
+
+
+<h2>
+Learn • Grow • Succeed
+</h2>
+
+
+<p>
+Free NGO Classes for Students to Build a Bright Future.
+Education, Skills and Technology Under One Roof.
+</p>
+
+
+<a href="#contact" class="btn">
+Join Now
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ================= MAIN VIDEO ================= -->
+
+<section class="hero-video">
+
+<h2 class="section-title">
+Our Video
+</h2>
+
+<video
+controls
+autoplay
+muted
+loop
+playsinline>
+
+<source
+src="intro.mp4"
+type="video/mp4">
+
+Your browser does not support the video tag.
+
+</video>
+
+</section>
+
+
+<!-- ================= COURSES ================= -->
+
+<section class="services" id="courses">
+
+<h2 class="section-title">
+Our Courses
+</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<img
+src="mathematics (1).png"
+alt="Mathematics">
+
+<h3>
+Mathematics
+</h3>
+
+<p>
+Strong foundation in Maths with expert guidance.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img
+src="Science.png"
+alt="Science">
+
+<h3>
+Science
+</h3>
+
+<p>
+Interactive learning and practical understanding.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img
+src="English.png"
+alt="English">
+
+<h3>
+English
+</h3>
+
+<p>
+Improve speaking, reading and writing skills.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img
+src="Computer (1).png"
+alt="Computer">
+
+<h3>
+Computer
+</h3>
+
+<p>
+Computer basics, MS Office and digital skills.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img
+src="Graphic design.png"
+alt="Graphic Design">
+
+<h3>
+Graphic Design
+</h3>
+
+<p>
+Creative designing using modern tools.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img
+src="Artificial intelligence (1).png"
+alt="Artificial Intelligence">
+
+<h3>
+Artificial Intelligence
+</h3>
+
+<p>
+Learn future-ready AI concepts and technology.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= GAMES ================= -->
+
+<section class="games" id="games">
+
+<h2 class="section-title">
+Fun Learning Games 🎮
+</h2>
+
+
+<div class="games-grid">
+
+
+<div class="game-card">
+
+<img
+src="puzzle-game.png"
+alt="Scrabble">
+
+<h3>
+Scrabble
+</h3>
+
+<p>
+Improve your thinking and problem-solving skills.
+</p>
+
+</div>
+
+
+<div class="game-card">
+
+<img
+src="quiz-game.png"
+alt="Word Building">
+
+<h3>
+Word Building
+</h3>
+
+<p>
+Improve your vocabulary with fun educational activities.
+</p>
+
+</div>
+
+
+<div class="game-card">
+
+<img
+src="math-game.png"
+alt="Carrom">
+
+<h3>
+Carrom
+</h3>
+
+<p>
+Enjoy a fun game and improve your concentration.
+</p>
+
+</div>
+
+
+<div class="game-card">
+
+<img
+src="memory-game.png"
+alt="Chess">
+
+<h3>
+Chess
+</h3>
+
+<p>
+Improve your thinking, planning and concentration.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= TEACHERS ================= -->
+
+<section class="teachers" id="teachers">
+
+<h2 class="section-title">
+Our Teachers
+</h2>
+
+
+<div class="teacher-grid">
+
+
+<div class="teacher-card">
+
+<img
+src="teacher1.png"
+class="teacher-photo"
+alt="Ms Jassy">
+
+<h3>
+Ms Jassy
+</h3>
+
+<h4>
+Mathematics Teacher
+</h4>
+
+<p>
+Helping students understand Mathematics
+with simple and practical learning methods.
+</p>
+
+</div>
+
+
+<div class="teacher-card">
+
+<img
+src="teacher2.png"
+class="teacher-photo"
+alt="Mrs Maninder">
+
+<h3>
+Mrs Maninder
+</h3>
+
+<h4>
+Science Teacher
+</h4>
+
+<p>
+Making Science interesting through
+interactive and practical learning.
+</p>
+
+</div>
+
+
+<div class="teacher-card">
+
+<img
+src="teacher3.png"
+class="teacher-photo"
+alt="Ms Preeti">
+
+<h3>
+Ms Preeti
+</h3>
+
+<h4>
+English Teacher
+</h4>
+
+<p>
+Helping students improve their speaking,
+reading and writing skills.
+</p>
+
+</div>
+
+
+<div class="teacher-card">
+
+<img
+src="teacher4.png"
+class="teacher-photo"
+alt="Ms Monika">
+
+<h3>
+Ms Monika
+</h3>
+
+<h4>
+Computer Teacher
+</h4>
+
+<p>
+Teaching computer basics and
+digital skills for the future.
+</p>
+
+</div>
+
+
+<div class="teacher-card">
+
+<img
+src="teacher5.png"
+class="teacher-photo"
+alt="Mrs Laxmi">
+
+<h3>
+Mrs Laxmi
+</h3>
+
+<h4>
+Graphic Design Teacher
+</h4>
+
+<p>
+Helping students learn creativity,
+design and modern digital tools.
+</p>
+
+</div>
+
+
+<div class="teacher-card">
+
+<img
+src="teacher6.png"
+class="teacher-photo"
+alt="Mr Raghav">
+
+<h3>
+Mr Raghav
+</h3>
+
+<h4>
+AI Teacher
+</h4>
+
+<p>
+Introducing students to Artificial
+Intelligence and future technologies.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= FOUNDER ================= -->
+
+<section class="founder" id="founder">
+
+<img
+src="founder.png"
+alt="Founder of AD Foundation"
+class="founder-photo">
+
+
+<h2 class="section-title">
+Founder
+</h2>
+
+
+<div class="founder-box">
+
+<h3>
+Mrs. Rakhi Luthra
+</h3>
+
+<p>
+Founder of AD Foundation NGO, dedicated to providing
+free education and skill development opportunities
+for students.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ================= OUR STORY ================= -->
+
+<section
+class="tribute-section"
+id="our-story">
+
+
+<h2 class="section-title">
+Our Story
+</h2>
+
+
+<div class="tribute-box">
+
+
+<h3>
+In Loving Memory of Avay Luthra
+</h3>
+
+
+<div id="storyText">
+
+
+<p>
+AD Foundation is a free NGO.
+</p>
+
+
+<p>
+This NGO is made in the loving memory of
+<b>Avay Luthra</b>.
+Avay brought happiness to his family and people around him.
+</p>
+
+
+<p>
+After Avay passed away, his mother
+<b>Rakhi Luthra</b>
+wanted to keep his memories alive.
+She wanted to do something good for children and society.
+Because of this dream, AD Foundation was started.
+</p>
+
+
+<p>
+The main goal of AD Foundation is to help children get
+education and learn new skills for free.
+Here, children can learn English, Mathematics, Science,
+Computer, Graphic Design and Artificial Intelligence
+without any cost.
+</p>
+
+
+<p>
+Every child has a dream.
+AD Foundation wants to help children achieve their dreams
+and build a bright future.
+</p>
+
+
+<p>
+Today, this foundation is working with love, care and
+dedication in the memory of Avay Luthra.
+</p>
+
+
+<p>
+<b>
+"A small step for education, a big tribute to Avay Luthra."
+</b>
+</p>
+
+</div>
+
+
+<!-- ================= VOICE BUTTONS ================= -->
+
+<div class="voice-buttons">
+
+
+<button
+onclick="playStory('hi')"
+class="voice-btn hindi-btn">
+
+🇮🇳 हिंदी
+
+</button>
+
+
+<button
+onclick="playStory('en')"
+class="voice-btn english-btn">
+
+🇬🇧 English
+
+</button>
+
+
+<button
+onclick="stopStory()"
+class="voice-btn stop-btn">
+
+⏹ Stop
+
+</button>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= EVENTS ================= -->
+
+<section
+class="celebration"
+id="events">
+
+
+<h2>
+Celebrations & Events 🎉
+</h2>
+
+
+<p>
+At AD Foundation we celebrate birthdays, achievements,
+educational events and community programs to create
+a joyful learning environment.
+</p>
+
+</section>
+
+
+<!-- ================= GALLERY ================= -->
+
+<section
+class="gallery"
+id="gallery">
+
+
+<h2 class="section-title">
+Our Gallery
+</h2>
+
+
+<div class="gallery-grid">
+
+
+<div class="gallery-item">
+
+<img
+src="gallery1.png"
+alt="Gallery Photo 1">
+
+</div>
+
+
+<div class="gallery-item">
+
+<img
+src="gallery2.png"
+alt="Gallery Photo 2">
+
+</div>
+
+
+<div class="gallery-item">
+
+<img
+src="gallery3.png"
+alt="Gallery Photo 3">
+
+</div>
+
+
+<div class="gallery-item">
+
+<img
+src="gallery4.png"
+alt="Gallery Photo 4">
+
+</div>
+
+
+<div class="gallery-item">
+
+<img
+src="gallery5.png"
+alt="Gallery Photo 5">
+
+</div>
+
+
+<div class="gallery-item">
+
+<img
+src="gallery6.png"
+alt="Gallery Photo 6">
+
+</div>
+
+
+<div class="gallery-item">
+
+<video controls playsinline>
+
+<source
+src="gallery-video1.mp4"
+type="video/mp4">
+
+Your browser does not support the video tag.
+
+</video>
+
+</div>
+
+
+<div class="gallery-item">
+
+<video controls playsinline>
+
+<source
+src="gallery-video2.mp4"
+type="video/mp4">
+
+Your browser does not support the video tag.
+
+</video>
+
+</div>
+
+
+<div class="gallery-item">
+
+<video controls playsinline>
+
+<source
+src="gallery-video3.mp4"
+type="video/mp4">
+
+Your browser does not support the video tag.
+
+</video>
+
+</div>
+
+
+<div class="gallery-item">
+
+<video controls playsinline>
+
+<source
+src="gallery-video4.mp4"
+type="video/mp4">
+
+Your browser does not support the video tag.
+
+</video>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= APPLY FORM ================= -->
+
+<section
+class="address"
+id="contact">
+
+
+<h2 class="section-title">
+Apply Now
+</h2>
+
+
+<div class="address-box">
+
+
+<form
+class="application-form"
+onsubmit="sendToWhatsApp(event)">
+
+
+<input
+type="text"
+id="name"
+placeholder="Enter Your Name"
+required>
+
+
+<input
+type="tel"
+id="mobile"
+placeholder="Enter Mobile Number"
+required>
+
+
+<input
+type="text"
+id="className"
+placeholder="Enter Class"
+required>
+
+
+<select
+id="course"
+required>
+
+<option value="">
+Select Course
+</option>
+
+<option value="Mathematics">
+Mathematics
+</option>
+
+<option value="Science">
+Science
+</option>
+
+<option value="English">
+English
+</option>
+
+<option value="Computer">
+Computer
+</option>
+
+<option value="Graphic Design">
+Graphic Design
+</option>
+
+<option value="Artificial Intelligence">
+Artificial Intelligence
+</option>
+
+</select>
+
+
+<textarea
+id="message"
+rows="4"
+placeholder="Enter Your Message">
+</textarea>
+
+
+<button
+type="submit"
+class="btn">
+
+Submit Application
+
+</button>
+
+
+</form>
+
+</div>
+
+</section>
+
+
+<!-- ================= WHATSAPP ================= -->
+
+<a
+href="https://wa.me/919315957454"
+class="whatsapp-float"
+target="_blank"
+rel="noopener"
+aria-label="Chat on WhatsApp">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<p>
+© 2026 AD Foundation NGO | Learn • Grow • Succeed
+</p>
+
+
+<p style="margin-top:8px;">
+WhatsApp: +91 93159 57454
+</p>
+
+</footer>
+
 
 <!-- ================= JAVASCRIPT ================= -->
 
 <script>
+
 
 /* ================= WHATSAPP FORM ================= */
 
@@ -1360,67 +1614,138 @@ function sendToWhatsApp(event){
 }
 
 
-/* ================= OUR STORY VOICE ================= */
+/* =====================================================
+   OUR STORY VOICE SYSTEM
+   Hindi + English + Stop
+   ===================================================== */
 
-function playStory(){
+function playStory(language){
 
-    if(!("speechSynthesis" in window)){
-
-        alert(
-        "Sorry, your browser does not support voice reading."
-        );
-
-        return;
-    }
+    /* पहले चल रही voice को पूरी तरह बंद करें */
 
     window.speechSynthesis.cancel();
 
-    const text = `
-    AD Foundation is a free NGO.
 
-    This NGO is made in the loving memory of Avay Luthra.
+    let text = "";
+    let voiceLanguage = "";
 
-    Avay brought happiness to his family and people around him.
 
-    After Avay passed away, his mother Rakhi Luthra wanted
-    to keep his memories alive.
+    /* ================= HINDI VOICE ================= */
 
-    She wanted to do something good for children and society.
+    if(language === "hi"){
 
-    Because of this dream, AD Foundation was started.
+        text = `
+        ए डी फाउंडेशन एक फ्री एन जी ओ है।
 
-    The main goal of AD Foundation is to help children get
-    education and learn new skills for free.
+        यह एन जी ओ अभय लूथरा की प्यारी याद में बनाया गया है।
 
-    Here, children can learn English, Mathematics, Science,
-    Computer, Graphic Design and Artificial Intelligence
-    without any cost.
+        अभय अपने परिवार और अपने आसपास के लोगों के लिए
+        हमेशा खुशी लेकर आते थे।
 
-    Every child has a dream.
+        अभय के निधन के बाद उनकी मां राखी लूथरा ने
+        उनकी यादों को हमेशा जीवित रखने का फैसला किया।
 
-    AD Foundation wants to help children achieve their dreams
-    and build a bright future.
+        वह बच्चों और समाज के लिए कुछ अच्छा करना चाहती थीं।
 
-    Today, this foundation is working with love, care and
-    dedication in the memory of Avay Luthra.
+        इसी सपने के साथ ए डी फाउंडेशन की शुरुआत हुई।
 
-    A small step for education, a big tribute to Avay Luthra.
-    `;
+        ए डी फाउंडेशन का मुख्य उद्देश्य बच्चों को
+        मुफ्त शिक्षा और नई स्किल्स सीखने का अवसर देना है।
+
+        यहां बच्चे इंग्लिश, गणित, साइंस, कंप्यूटर,
+        ग्राफिक डिजाइन और आर्टिफिशियल इंटेलिजेंस
+        बिना किसी शुल्क के सीख सकते हैं।
+
+        हर बच्चे का एक सपना होता है।
+
+        ए डी फाउंडेशन बच्चों को उनके सपने पूरे करने
+        और एक उज्ज्वल भविष्य बनाने में मदद करना चाहता है।
+
+        आज यह फाउंडेशन अभय लूथरा की याद में
+        प्यार, देखभाल और समर्पण के साथ काम कर रहा है।
+
+        शिक्षा की ओर एक छोटा कदम,
+        अभय लूथरा को एक बड़ी श्रद्धांजलि।
+        `;
+
+        voiceLanguage = "hi-IN";
+
+    }
+
+
+    /* ================= ENGLISH VOICE ================= */
+
+    else if(language === "en"){
+
+        text = `
+        AD Foundation is a free NGO.
+
+        This NGO is made in the loving memory of Avay Luthra.
+
+        Avay brought happiness to his family
+        and people around him.
+
+        After Avay passed away, his mother
+        Rakhi Luthra wanted to keep his memories alive.
+
+        She wanted to do something good for children and society.
+
+        Because of this dream, AD Foundation was started.
+
+        The main goal of AD Foundation is to help children
+        get education and learn new skills for free.
+
+        Here, children can learn English, Mathematics, Science,
+        Computer, Graphic Design and Artificial Intelligence
+        without any cost.
+
+        Every child has a dream.
+
+        AD Foundation wants to help children achieve their dreams
+        and build a bright future.
+
+        Today, this foundation is working with love, care
+        and dedication in the memory of Avay Luthra.
+
+        A small step for education,
+        a big tribute to Avay Luthra.
+        `;
+
+        voiceLanguage = "en-US";
+
+    }
+
+
+    /* ================= CREATE VOICE ================= */
 
     const speech =
     new SpeechSynthesisUtterance(text);
 
-    speech.lang = "en-US";
-    speech.rate = 0.9;
-    speech.pitch = 1;
-    speech.volume = 1;
+
+    speech.lang =
+    voiceLanguage;
+
+
+    speech.rate =
+    0.9;
+
+
+    speech.pitch =
+    1;
+
+
+    speech.volume =
+    1;
+
+
+    /* ================= SPEAK ================= */
 
     window.speechSynthesis.speak(speech);
 
 }
 
 
-/* ================= STOP STORY ================= */
+/* ================= STOP VOICE ================= */
 
 function stopStory(){
 
@@ -1428,10 +1753,18 @@ function stopStory(){
 
 }
 
+
+/* ================= PAGE LOAD ================= */
+
+window.addEventListener("beforeunload", function(){
+
+    window.speechSynthesis.cancel();
+
+});
+
+
 </script>
 
-
-<!-- ================= WEBSITE END ================= -->
 
 </body>
 </html>
