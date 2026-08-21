@@ -250,8 +250,6 @@ alt="AD Foundation Logo">
 
 <a href="#our-story">Our Story</a>
 
-<a href="#tribute">Tribute</a>
-
 <a href="#events">Events</a>
 
 <a href="#gallery">Gallery</a>
@@ -313,7 +311,7 @@ Your browser does not support the video tag.
 
 </section>
 
-<!-- PART 1 END --><!-- ================= COURSES ================= -->
+<!-- ================= COURSES ================= -->
 
 <section class="services" id="courses">
 
@@ -411,10 +409,7 @@ Improve your thinking, planning and concentration.
 </div>
 
 </div>
-</section>
-
-
-<!-- ================= TEACHERS ================= -->
+</section><!-- ================= TEACHERS ================= -->
 
 <section class="teachers" id="teachers">
 
@@ -585,7 +580,6 @@ Our Story
 In Loving Memory of Avay Luthra
 </h3>
 
-
 <div id="storyText">
 
 <p>
@@ -594,7 +588,7 @@ AD Foundation is a free NGO.
 
 <p>
 This NGO is made in the loving memory of
-<b>   Abhya Luthra</b>.
+<b>Abhya Luthra</b>.
 Abhya brought happiness to his family and people around him.
 </p>
 
@@ -622,7 +616,7 @@ and build a bright future.
 
 <p>
 Today, this foundation is working with love, care and
-dedication in the memory of  Abhya Luthra.
+dedication in the memory of Abhya Luthra.
 </p>
 
 <p>
@@ -662,90 +656,7 @@ class="voice-btn stop-btn">
 </section>
 
 
-<!-- ================= SPECIAL TRIBUTE ================= -->
-
-<section class="tribute-section" id="tribute">
-
-<h2 class="section-title">
-Special Tribute
-</h2>
-
-<div class="tribute-box">
-
-<h3>
-In Memory of Avay Luthra
-</h3>
-
-<div id="letterText">
-
-<p>
-We are very sad to share that
-<b>Avay Luthra</b> is no longer with us.
-</p>
-
-<p>
-After Avay passed away, his mother
-<b>Mrs. Rakhi Luthra</b>
-wanted to keep his memories alive.
-</p>
-
-<p>
-Avay had a wish to help children and people
-who need support.
-</p>
-
-<p>
-To respect his wish and keep his memory alive,
-<b>AD Foundation</b> was started as a free NGO.
-</p>
-
-<p>
-Today, AD Foundation is working to provide
-free education and learning opportunities
-to children.
-</p>
-
-<p>
-We will always remember
-<b>Avay Luthra</b>
-and his dream of helping others.
-</p>
-
-<p>
-<b>With Respect,</b><br>
-<b>AD Foundation</b><br>
-Free Education • Help • Support
-</p>
-
-</div>
-
-
-<div class="voice-buttons">
-
-<button
-onclick="readLetter()"
-class="voice-btn">
-
-🔊 Read Tribute
-
-</button>
-
-<button
-onclick="stopReading()"
-class="voice-btn stop-btn">
-
-⏹ Stop
-
-</button>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ================= PART 2 END ================= --><!-- ================= EVENTS ================= -->
+<!-- ================= EVENTS ================= -->
 
 <section class="celebration" id="events">
 
@@ -1145,7 +1056,7 @@ WhatsApp: +91 93159 57454
 }
 
 
-/* ================= STORY / TRIBUTE ================= */
+/* ================= STORY ================= */
 
 .tribute-section{
     padding:80px 8%;
@@ -1341,10 +1252,7 @@ footer{
     color:white;
     text-align:center;
     padding:20px;
-}
-
-
-/* ================= MOBILE ================= */
+}/* ================= MOBILE ================= */
 
 @media(max-width:768px){
 
@@ -1520,47 +1428,10 @@ function stopStory(){
 
 }
 
-
-/* ================= TRIBUTE VOICE ================= */
-
-function readLetter(){
-
-    if(!("speechSynthesis" in window)){
-
-        alert(
-        "Sorry, your browser does not support voice reading."
-        );
-
-        return;
-    }
-
-    window.speechSynthesis.cancel();
-
-    const text =
-    document.getElementById("letterText").innerText;
-
-    const speech =
-    new SpeechSynthesisUtterance(text);
-
-    speech.lang = "en-US";
-    speech.rate = 0.9;
-    speech.pitch = 0.9;
-    speech.volume = 1;
-
-    window.speechSynthesis.speak(speech);
-
-}
-
-
-/* ================= STOP TRIBUTE ================= */
-
-function stopReading(){
-
-    window.speechSynthesis.cancel();
-
-}
-
 </script>
 
 
-<!-- ================= PART 3 END ================= -->
+<!-- ================= WEBSITE END ================= -->
+
+</body>
+</html>
