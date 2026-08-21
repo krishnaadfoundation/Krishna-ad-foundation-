@@ -29,7 +29,6 @@ body{
     color:#222;
 }
 
-
 /* ================= HEADER ================= */
 
 header{
@@ -57,7 +56,6 @@ header{
 
 nav{
     display:flex;
-    align-items:center;
     flex-wrap:wrap;
     justify-content:center;
 }
@@ -73,7 +71,6 @@ nav a{
 nav a:hover{
     color:#ffd700;
 }
-
 
 /* ================= HERO ================= */
 
@@ -100,35 +97,22 @@ nav a:hover{
 }
 
 .hero-content{
-    max-width:800px;
+    max-width:850px;
 }
-
-
-/* ================= HERO PHOTO ================= */
 
 .learn-photo{
     width:180px;
     height:180px;
-
     display:block;
-    margin:0 auto;
-
+    margin:auto;
     object-fit:cover;
-
     border-radius:50%;
-
     border:6px solid white;
-
-    box-shadow:
-    0 8px 25px rgba(0,0,0,0.35);
+    box-shadow:0 8px 25px rgba(0,0,0,0.35);
 }
 
-
-/* ================= NAME ================= */
-
 .hero-name{
-    background:
-    linear-gradient(
+    background:linear-gradient(
         135deg,
         #0057b8,
         #00a8ff,
@@ -136,27 +120,14 @@ nav a:hover{
     );
 
     color:white;
-
     font-size:27px;
     font-weight:600;
-
     padding:15px 35px;
-
     border-radius:15px;
-
     display:inline-block;
-
     margin-top:15px;
     margin-bottom:20px;
-
-    text-align:center;
-
-    box-shadow:
-    0 5px 20px rgba(0,87,184,0.4);
 }
-
-
-/* ================= HERO TEXT ================= */
 
 .hero h2{
     font-size:55px;
@@ -168,628 +139,48 @@ nav a:hover{
     font-size:20px;
     color:white;
     margin-bottom:25px;
+    line-height:1.8;
 }
-
-
-/* ================= BUTTON ================= */
 
 .btn{
     display:inline-block;
-
     background:#d4a017;
-
     color:white;
-
     padding:14px 30px;
-
     border-radius:30px;
-
     text-decoration:none;
-
     font-weight:600;
-
-    border:none;
-
-    cursor:pointer;
-
     transition:0.3s;
 }
 
 .btn:hover{
     background:#b8860b;
-
     transform:translateY(-3px);
 }
-
-
-/* ================= MAIN VIDEO ================= */
-
-.hero-video{
-    text-align:center;
-
-    padding:50px 8%;
-
-    background:#f5f9ff;
-}
-
-.hero-video video{
-    width:100%;
-
-    max-width:700px;
-
-    height:auto;
-
-    border-radius:20px;
-
-    display:block;
-
-    margin:auto;
-
-    box-shadow:
-    0 10px 25px rgba(0,0,0,0.15);
-}
-
 
 /* ================= SECTION TITLE ================= */
 
 .section-title{
     text-align:center;
-
     font-size:40px;
-
     color:#002b7f;
-
     margin-bottom:40px;
 }
 
+/* ================= MAIN VIDEO ================= */
 
-/* ================= COURSES ================= */
-
-.services{
-    padding:80px 8%;
-}
-
-.cards{
-    display:grid;
-
-    grid-template-columns:
-    repeat(auto-fit,minmax(250px,1fr));
-
-    gap:25px;
-}
-
-.card{
-    background:white;
-
-    padding:20px;
-
-    border-radius:20px;
-
+.hero-video{
     text-align:center;
-
-    box-shadow:
-    0 10px 25px rgba(0,0,0,0.1);
-
-    transition:0.4s;
+    padding:60px 8%;
+    background:#fff;
 }
 
-.card:hover{
-    transform:translateY(-10px);
-}
-
-.card img{
+.hero-video video{
     width:100%;
-
-    height:180px;
-
-    object-fit:cover;
-
-    border-radius:15px;
-
-    margin-bottom:15px;
-}
-
-.card h3{
-    color:#0057b8;
-
-    margin-bottom:10px;
-}
-
-
-/* ================= GAMES ================= */
-
-.games{
-    padding:80px 8%;
-
-    background:#ffffff;
-}
-
-.games-grid{
-    display:grid;
-
-    grid-template-columns:
-    repeat(auto-fit,minmax(240px,1fr));
-
-    gap:25px;
-}
-
-.game-card{
-    background:#f5f9ff;
-
-    padding:18px;
-
-    border-radius:22px;
-
-    text-align:center;
-
-    box-shadow:
-    0 10px 25px rgba(0,0,0,0.12);
-
-    transition:0.4s;
-}
-
-.game-card:hover{
-    transform:translateY(-10px);
-
-    box-shadow:
-    0 15px 30px rgba(0,0,0,0.18);
-}
-
-.game-card img{
-    width:100%;
-
-    height:190px;
-
-    object-fit:cover;
-
-    border-radius:16px;
-
-    margin-bottom:15px;
-}
-
-.game-card h3{
-    color:#0057b8;
-
-    font-size:22px;
-
-    margin-bottom:8px;
-}
-
-.game-card p{
-    color:#555;
-
-    font-size:14px;
-
-    line-height:1.6;
-
-    margin-bottom:15px;
-}
-
-.game-btn{
-    display:inline-block;
-
-    background:#0057b8;
-
-    color:white;
-
-    padding:10px 24px;
-
-    border-radius:25px;
-
-    text-decoration:none;
-
-    font-weight:600;
-
-    transition:0.3s;
-}
-
-.game-btn:hover{
-    background:#002b7f;
-
-    transform:scale(1.05);
-}
-
-
-/* ================= TEACHERS ================= */
-
-.teachers{
-    padding:80px 8%;
-
-    background:#f5f9ff;
-}
-
-.teacher-grid{
-    display:grid;
-
-    grid-template-columns:
-    repeat(auto-fit,minmax(230px,1fr));
-
-    gap:25px;
-}
-
-.teacher-card{
-    background:white;
-
-    padding:30px 20px;
-
+    max-width:750px;
     border-radius:20px;
-
-    text-align:center;
-
-    box-shadow:
-    0 10px 25px rgba(0,0,0,0.1);
-
-    transition:0.4s;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
-
-.teacher-card:hover{
-    transform:translateY(-10px);
-}
-
-.teacher-photo{
-    width:150px;
-    height:150px;
-
-    border-radius:50%;
-
-    object-fit:cover;
-
-    border:5px solid #0057b8;
-
-    box-shadow:
-    0 8px 20px rgba(0,0,0,0.2);
-
-    margin-bottom:18px;
-}
-
-.teacher-card h3{
-    color:#0057b8;
-
-    font-size:23px;
-
-    margin-bottom:8px;
-}
-
-.teacher-card h4{
-    color:#d4a017;
-
-    margin-bottom:12px;
-}
-
-.teacher-card p{
-    color:#555;
-
-    font-size:15px;
-
-    line-height:1.6;
-}
-
-
-/* ================= FOUNDER ================= */
-
-.founder{
-    padding:80px 8%;
-
-    background:white;
-
-    text-align:center;
-}
-
-.founder-photo{
-    width:160px;
-    height:160px;
-
-    border-radius:50%;
-
-    object-fit:cover;
-
-    display:block;
-
-    margin:0 auto 20px;
-
-    border:5px solid #0057b8;
-
-    box-shadow:
-    0 8px 20px rgba(0,0,0,0.2);
-}
-
-.founder-box{
-    max-width:800px;
-
-    margin:auto;
-
-    padding:30px;
-
-    border-radius:20px;
-
-    background:#f5f9ff;
-
-    box-shadow:
-    0 5px 20px rgba(0,0,0,0.1);
-}
-
-.founder-box h3{
-    color:#0057b8;
-
-    font-size:28px;
-
-    margin-bottom:15px;
-}
-
-
-/* ================= SPECIAL TRIBUTE ================= */
-
-.tribute-section{
-    padding:80px 8%;
-
-    background:#f5f9ff;
-
-    text-align:center;
-}
-
-.tribute-box{
-    max-width:850px;
-
-    margin:auto;
-
-    padding:35px;
-
-    background:white;
-
-    border-radius:22px;
-
-    box-shadow:
-    0 10px 30px rgba(0,0,0,0.12);
-
-    text-align:left;
-}
-
-.tribute-box h3{
-    text-align:center;
-
-    color:#0057b8;
-
-    font-size:28px;
-
-    margin-bottom:25px;
-}
-
-.tribute-box p{
-    color:#444;
-
-    font-size:16px;
-
-    line-height:1.8;
-
-    margin-bottom:18px;
-}
-
-.voice-buttons{
-    text-align:center;
-
-    margin-top:30px;
-}
-
-.voice-btn{
-    border:none;
-
-    background:#0057b8;
-
-    color:white;
-
-    padding:13px 24px;
-
-    border-radius:30px;
-
-    font-size:16px;
-
-    font-weight:600;
-
-    cursor:pointer;
-
-    margin:5px;
-
-    transition:0.3s;
-}
-
-.voice-btn:hover{
-    background:#002b7f;
-
-    transform:translateY(-2px);
-}
-
-.stop-btn{
-    background:#d4a017;
-}
-
-.stop-btn:hover{
-    background:#b8860b;
-}
-
-
-/* ================= EVENTS ================= */
-
-.celebration{
-    padding:80px 8%;
-
-    background:
-    linear-gradient(
-        135deg,
-        #0057b8,
-        #002b7f
-    );
-
-    text-align:center;
-
-    color:white;
-}
-
-.celebration h2{
-    font-size:40px;
-}
-
-
-/* ================= GALLERY ================= */
-
-.gallery{
-    padding:80px 8%;
-
-    background:white;
-}
-
-.gallery-grid{
-    display:grid;
-
-    grid-template-columns:
-    repeat(auto-fit,minmax(250px,1fr));
-
-    gap:25px;
-}
-
-.gallery-item{
-    background:#f5f9ff;
-
-    padding:15px;
-
-    border-radius:20px;
-
-    box-shadow:
-    0 10px 25px rgba(0,0,0,0.1);
-
-    overflow:hidden;
-
-    transition:0.4s;
-}
-
-.gallery-item:hover{
-    transform:translateY(-8px);
-}
-
-.gallery-item img,
-.gallery-item video{
-    width:100%;
-
-    height:220px;
-
-    object-fit:cover;
-
-    border-radius:15px;
-
-    display:block;
-}
-
-
-/* ================= CONTACT ================= */
-
-.address{
-    padding:80px 8%;
-
-    text-align:center;
-}
-
-.address-box{
-    background:white;
-
-    padding:30px;
-
-    border-radius:20px;
-
-    max-width:700px;
-
-    margin:auto;
-
-    box-shadow:
-    0 10px 25px rgba(0,0,0,0.1);
-}
-
-.application-form{
-    display:flex;
-
-    flex-direction:column;
-
-    gap:15px;
-}
-
-.application-form input,
-.application-form select,
-.application-form textarea{
-    width:100%;
-
-    padding:14px;
-
-    border:1px solid #ddd;
-
-    border-radius:10px;
-
-    font-size:16px;
-
-    outline:none;
-}
-
-.application-form input:focus,
-.application-form select:focus,
-.application-form textarea:focus{
-    border-color:#0057b8;
-}
-
-.application-form textarea{
-    resize:vertical;
-}
-
-
-/* ================= WHATSAPP ================= */
-
-.whatsapp-float{
-    position:fixed;
-
-    width:62px;
-    height:62px;
-
-    bottom:25px;
-    right:25px;
-
-    background:#25D366;
-
-    color:white;
-
-    border-radius:50%;
-
-    display:flex;
-
-    align-items:center;
-    justify-content:center;
-
-    font-size:34px;
-
-    text-decoration:none;
-
-    box-shadow:
-    0 5px 20px rgba(0,0,0,0.3);
-
-    z-index:9999;
-
-    transition:0.3s;
-}
-
-.whatsapp-float:hover{
-    transform:scale(1.1);
-
-    background:#20bd5a;
-}
-
-
-/* ================= FOOTER ================= */
-
-footer{
-    background:#001b4d;
-
-    color:white;
-
-    text-align:center;
-
-    padding:20px;
-}
-
 
 /* ================= MOBILE ================= */
 
@@ -797,10 +188,7 @@ footer{
 
     header{
         flex-direction:column;
-
         gap:15px;
-
-        padding:12px 5%;
     }
 
     .logo img{
@@ -808,35 +196,9 @@ footer{
         height:75px;
     }
 
-    nav{
-        display:flex;
-
-        flex-wrap:wrap;
-
-        justify-content:center;
-    }
-
     nav a{
         margin:7px;
-
         font-size:14px;
-    }
-
-    .hero{
-        min-height:70vh;
-
-        padding:40px 15px;
-    }
-
-    .learn-photo{
-        width:150px;
-        height:150px;
-    }
-
-    .hero-name{
-        font-size:23px;
-
-        margin-top:12px;
     }
 
     .hero h2{
@@ -847,191 +209,102 @@ footer{
         font-size:16px;
     }
 
-    .section-title{
-        font-size:32px;
+    .hero-name{
+        font-size:22px;
     }
 
-    .celebration h2{
+    .learn-photo{
+        width:150px;
+        height:150px;
+    }
+
+    .section-title{
         font-size:30px;
     }
-
-    .gallery-item img,
-    .gallery-item video{
-        height:200px;
-    }
-
-    .founder-photo{
-        width:140px;
-        height:140px;
-    }
-
-    .teacher-photo{
-        width:135px;
-        height:135px;
-    }
-
-    .game-card img{
-        height:180px;
-    }
-
-    .tribute-section{
-        padding:60px 5%;
-    }
-
-    .tribute-box{
-        padding:25px 20px;
-    }
-
-    .tribute-box h3{
-        font-size:23px;
-    }
-
-    .tribute-box p{
-        font-size:15px;
-    }
-
-    .whatsapp-float{
-        width:58px;
-        height:58px;
-
-        right:18px;
-        bottom:18px;
-
-        font-size:31px;
-    }
-
 }
-
 </style>
 </head>
 
-
 <body>
-
 
 <!-- ================= HEADER ================= -->
 
 <header>
 
 <div class="logo">
-
-<img
-src="AD Foundation Logo (1).png"
+<img src="AD Foundation Logo (1).png"
 alt="AD Foundation Logo">
-
 </div>
-
 
 <nav>
 
-<a href="#home">
-Home
-</a>
+<a href="#home">Home</a>
 
-<a href="#courses">
-Courses
-</a>
+<a href="#courses">Courses</a>
 
-<a href="#games">
-Games
-</a>
+<a href="#games">Games</a>
 
-<a href="#teachers">
-Teachers
-</a>
+<a href="#teachers">Teachers</a>
 
-<a href="#founder">
-Founder
-</a>
+<a href="#founder">Founder</a>
 
-<a href="#tribute">
-Tribute
-</a>
+<a href="#our-story">Our Story</a>
 
-<a href="#events">
-Celebrations
-</a>
+<a href="#tribute">Tribute</a>
 
-<a href="#gallery">
-Gallery
-</a>
+<a href="#events">Events</a>
 
-<a href="#contact">
-Contact
-</a>
+<a href="#gallery">Gallery</a>
+
+<a href="#contact">Contact</a>
 
 </nav>
 
 </header>
 
-
-
 <!-- ================= HERO ================= -->
 
-<section
-class="hero"
-id="home">
+<section class="hero" id="home">
 
 <div class="hero-content">
 
-
 <img
 src="learn-photo.png"
-alt="AD Foundation Learn and Grow"
-class="learn-photo"
->
-
+alt="AD Foundation"
+class="learn-photo">
 
 <h3 class="hero-name">
 Mr Abhya Luthra
 </h3>
 
-
 <h2>
 Learn • Grow • Succeed
 </h2>
 
-
 <p>
 Free NGO Classes for Students to Build a Bright Future.
-Education, Skills & Technology Under One Roof.
+Education, Skills and Technology Under One Roof.
 </p>
 
-
-<a
-href="#contact"
-class="btn">
-
+<a href="#contact" class="btn">
 Join Now
-
 </a>
-
 
 </div>
 
 </section>
 
-
-
 <!-- ================= MAIN VIDEO ================= -->
 
-<section
-class="hero-video">
+<section class="hero-video">
 
 <h2 class="section-title">
 Our Video
 </h2>
 
+<video controls autoplay muted loop playsinline>
 
-<video
-controls
-autoplay
-muted
-loop
-playsinline>
-
-<source
-src="intro.mp4"
+<source src="intro.mp4"
 type="video/mp4">
 
 Your browser does not support the video tag.
@@ -1040,231 +313,116 @@ Your browser does not support the video tag.
 
 </section>
 
+<!-- PART 1 END --><!-- ================= COURSES ================= -->
 
-
-<!-- ================= COURSES ================= -->
-
-<section
-class="services"
-id="courses">
+<section class="services" id="courses">
 
 <h2 class="section-title">
 Our Courses
 </h2>
 
-
 <div class="cards">
 
-
 <div class="card">
-
-<img
-src="mathematics (1).png"
-alt="Mathematics">
-
-<h3>
-Mathematics
-</h3>
-
-<p>
-Strong foundation in Maths with expert guidance.
-</p>
-
+<img src="mathematics (1).png" alt="Mathematics">
+<h3>Mathematics</h3>
+<p>Strong foundation in Maths with expert guidance.</p>
 </div>
 
-
 <div class="card">
-
-<img
-src="Science.png"
-alt="Science">
-
-<h3>
-Science
-</h3>
-
-<p>
-Interactive learning and practical understanding.
-</p>
-
+<img src="Science.png" alt="Science">
+<h3>Science</h3>
+<p>Interactive learning and practical understanding.</p>
 </div>
 
-
 <div class="card">
-
-<img
-src="English.png"
-alt="English">
-
-<h3>
-English
-</h3>
-
-<p>
-Improve speaking, reading and writing skills.
-</p>
-
+<img src="English.png" alt="English">
+<h3>English</h3>
+<p>Improve speaking, reading and writing skills.</p>
 </div>
 
-
 <div class="card">
-
-<img
-src="Computer (1).png"
-alt="Computer">
-
-<h3>
-Computer
-</h3>
-
-<p>
-Computer basics, MS Office and digital skills.
-</p>
-
+<img src="Computer (1).png" alt="Computer">
+<h3>Computer</h3>
+<p>Computer basics, MS Office and digital skills.</p>
 </div>
 
-
 <div class="card">
-
-<img
-src="Graphic design.png"
-alt="Graphic Design">
-
-<h3>
-Graphic Design
-</h3>
-
-<p>
-Creative designing using modern tools.
-</p>
-
+<img src="Graphic design.png" alt="Graphic Design">
+<h3>Graphic Design</h3>
+<p>Creative designing using modern tools.</p>
 </div>
 
-
 <div class="card">
-
-<img
-src="Artificial intelligence (1).png"
+<img src="Artificial intelligence (1).png"
 alt="Artificial Intelligence">
-
-<h3>
-Artificial Intelligence
-</h3>
-
-<p>
-Learn future-ready AI concepts and technology.
-</p>
-
+<h3>Artificial Intelligence</h3>
+<p>Learn future-ready AI concepts and technology.</p>
 </div>
 
-
 </div>
-
 </section>
-
 
 
 <!-- ================= GAMES ================= -->
 
-<section
-class="games"
-id="games">
+<section class="games" id="games">
 
 <h2 class="section-title">
 Fun Learning Games 🎮
 </h2>
 
-
 <div class="games-grid">
 
-
 <div class="game-card">
-
-<img
-src="puzzle-game.png"
-alt="Puzzle Game">
-
-<h3>
-Scrabble
-</h3>
-
+<img src="puzzle-game.png" alt="Scrabble">
+<h3>Scrabble</h3>
 <p>
 Improve your thinking and problem-solving skills.
 </p>
-
+<a href="#" class="game-btn">Play Game</a>
 </div>
-
 
 <div class="game-card">
-
-<img
-src="quiz-game.png"
-alt="Quiz Game">
-
-<h3>
-Word Building
-</h3>
-
+<img src="quiz-game.png" alt="Word Building">
+<h3>Word Building</h3>
 <p>
-Test your knowledge with fun educational questions.
+Improve your vocabulary with fun educational activities.
 </p>
-
+<a href="#" class="game-btn">Play Game</a>
 </div>
-
 
 <div class="game-card">
-
-<img
-src="math-game.png"
-alt="Math Game">
-
-<h3>
-Carrom
-</h3>
-
+<img src="math-game.png" alt="Carrom">
+<h3>Carrom</h3>
 <p>
-Learn Mathematics through exciting challenges.
+Enjoy a fun game and improve your concentration.
 </p>
-
+<a href="#" class="game-btn">Play Game</a>
 </div>
-
 
 <div class="game-card">
-
-<img
-src="memory-game.png"
-alt="Memory Game">
-
-<h3>
-Chess
-</h3>
-
+<img src="memory-game.png" alt="Chess">
+<h3>Chess</h3>
 <p>
-Train your memory with this fun learning game.
+Improve your thinking, planning and concentration.
 </p>
-
+<a href="#" class="game-btn">Play Game</a>
 </div>
 
-
 </div>
-
 </section>
-
 
 
 <!-- ================= TEACHERS ================= -->
 
-<section
-class="teachers"
-id="teachers">
+<section class="teachers" id="teachers">
 
 <h2 class="section-title">
 Our Teachers
 </h2>
 
-
 <div class="teacher-grid">
-
 
 <div class="teacher-card">
 
@@ -1273,13 +431,9 @@ src="teacher1.png"
 class="teacher-photo"
 alt="Ms Jassy">
 
-<h3>
-Ms Jassy
-</h3>
+<h3>Ms Jassy</h3>
 
-<h4>
-Mathematics Teacher
-</h4>
+<h4>Mathematics Teacher</h4>
 
 <p>
 Helping students understand Mathematics
@@ -1296,13 +450,9 @@ src="teacher2.png"
 class="teacher-photo"
 alt="Mrs Maninder">
 
-<h3>
-Mrs Maninder
-</h3>
+<h3>Mrs Maninder</h3>
 
-<h4>
-Science Teacher
-</h4>
+<h4>Science Teacher</h4>
 
 <p>
 Making Science interesting through
@@ -1319,13 +469,9 @@ src="teacher3.png"
 class="teacher-photo"
 alt="Ms Preeti">
 
-<h3>
-Ms Preeti
-</h3>
+<h3>Ms Preeti</h3>
 
-<h4>
-English Teacher
-</h4>
+<h4>English Teacher</h4>
 
 <p>
 Helping students improve their speaking,
@@ -1342,13 +488,9 @@ src="teacher4.png"
 class="teacher-photo"
 alt="Ms Monika">
 
-<h3>
-Ms Monika
-</h3>
+<h3>Ms Monika</h3>
 
-<h4>
-Computer Teacher
-</h4>
+<h4>Computer Teacher</h4>
 
 <p>
 Teaching computer basics and
@@ -1365,13 +507,9 @@ src="teacher5.png"
 class="teacher-photo"
 alt="Mrs Laxmi">
 
-<h3>
-Mrs Laxmi
-</h3>
+<h3>Mrs Laxmi</h3>
 
-<h4>
-Graphic Design Teacher
-</h4>
+<h4>Graphic Design Teacher</h4>
 
 <p>
 Helping students learn creativity,
@@ -1388,13 +526,9 @@ src="teacher6.png"
 class="teacher-photo"
 alt="Mr Raghav">
 
-<h3>
-Mr Raghav
-</h3>
+<h3>Mr Raghav</h3>
 
-<h4>
-AI Teacher
-</h4>
+<h4>AI Teacher</h4>
 
 <p>
 Introducing students to Artificial
@@ -1403,29 +537,22 @@ Intelligence and future technologies.
 
 </div>
 
-
 </div>
-
 </section>
-
 
 
 <!-- ================= FOUNDER ================= -->
 
-<section
-class="founder"
-id="founder">
+<section class="founder" id="founder">
 
 <img
 src="founder.png"
-alt="Founder"
+alt="Founder of AD Foundation"
 class="founder-photo">
-
 
 <h2 class="section-title">
 Founder
 </h2>
-
 
 <div class="founder-box">
 
@@ -1435,8 +562,8 @@ Mrs. Rakhi Luthra
 
 <p>
 Founder of AD Foundation NGO, dedicated to providing
-free quality education and skill development
-opportunities for students.
+free education and skill development opportunities
+for students.
 </p>
 
 </div>
@@ -1444,70 +571,145 @@ opportunities for students.
 </section>
 
 
+<!-- ================= OUR STORY ================= -->
+
+<section class="tribute-section" id="our-story">
+
+<h2 class="section-title">
+Our Story
+</h2>
+
+<div class="tribute-box">
+
+<h3>
+In Loving Memory of Avay Luthra
+</h3>
+
+
+<div id="storyText">
+
+<p>
+AD Foundation is a free NGO.
+</p>
+
+<p>
+This NGO is made in the loving memory of
+<b>Avay Luthra</b>.
+Avay brought happiness to his family and people around him.
+</p>
+
+<p>
+After Avay passed away, his mother
+<b>Rakhi Luthra</b>
+wanted to keep his memories alive.
+She wanted to do something good for children and society.
+Because of this dream, AD Foundation was started.
+</p>
+
+<p>
+The main goal of AD Foundation is to help children get
+education and learn new skills for free.
+Here, children can learn English, Mathematics, Science,
+Computer, Graphic Design and Artificial Intelligence
+without any cost.
+</p>
+
+<p>
+Every child has a dream.
+AD Foundation wants to help children achieve their dreams
+and build a bright future.
+</p>
+
+<p>
+Today, this foundation is working with love, care and
+dedication in the memory of Avay Luthra.
+</p>
+
+<p>
+<b>
+"A small step for education, a big tribute to Avay Luthra."
+</b>
+</p>
+
+</div>
+
+
+<!-- ================= VOICE CONTROLS ================= -->
+
+<div class="voice-buttons">
+
+<button
+onclick="playStory()"
+class="voice-btn">
+
+🔊 Play Story
+
+</button>
+
+
+<button
+onclick="stopStory()"
+class="voice-btn stop-btn">
+
+⏹ Stop Voice
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
 
 <!-- ================= SPECIAL TRIBUTE ================= -->
 
-<section
-class="tribute-section"
-id="tribute">
+<section class="tribute-section" id="tribute">
 
 <h2 class="section-title">
 Special Tribute
 </h2>
 
-
 <div class="tribute-box">
 
 <h3>
-In Memory of Abhya Luthra
+In Memory of Avay Luthra
 </h3>
-
 
 <div id="letterText">
 
 <p>
-We are very sad to share that <b>Abhya Luthra</b> is no longer with us.
-He passed away because of a serious illness.
+We are very sad to share that
+<b>Avay Luthra</b> is no longer with us.
 </p>
-
 
 <p>
-He was the elder son of his mother,
-<b>Mrs. Jakirot</b>.
-His family and everyone who knew him are very sad because of his passing.
+After Avay passed away, his mother
+<b>Mrs. Rakhi Luthra</b>
+wanted to keep his memories alive.
 </p>
-
 
 <p>
-Abhya had a wish to start an NGO that could help people and children
-who need support. He wanted to provide
-<b>free education and help</b>
-to those who cannot afford it.
+Avay had a wish to help children and people
+who need support.
 </p>
-
 
 <p>
 To respect his wish and keep his memory alive,
 <b>AD Foundation</b> was started as a free NGO.
 </p>
 
-
 <p>
-Today, we are trying to continue his dream by helping people
-through education and support.
+Today, AD Foundation is working to provide
+free education and learning opportunities
+to children.
 </p>
 
-
 <p>
-We will always remember <b>Abhya Luthra</b>
-and his wish to help others.
+We will always remember
+<b>Avay Luthra</b>
+and his dream of helping others.
 </p>
-
-
-<p>
-<b>May his soul rest in peace.</b>
-</p>
-
 
 <p>
 <b>With Respect,</b><br>
@@ -1524,10 +726,9 @@ Free Education • Help • Support
 onclick="readLetter()"
 class="voice-btn">
 
-🔊 Read Letter
+🔊 Read Tribute
 
 </button>
-
 
 <button
 onclick="stopReading()"
@@ -1539,24 +740,16 @@ class="voice-btn stop-btn">
 
 </div>
 
-
 </div>
 
 </section>
 
 
+<!-- ================= PART 2 END ================= --><!-- ================= EVENTS ================= -->
 
-<!-- ================= EVENTS ================= -->
+<section class="celebration" id="events">
 
-<section
-class="celebration"
-id="events">
-
-<h2>
-Celebrations & Events 🎉
-</h2>
-
-<br>
+<h2>Celebrations & Events 🎉</h2>
 
 <p>
 At AD Foundation we celebrate birthdays, achievements,
@@ -1567,167 +760,94 @@ a joyful learning environment.
 </section>
 
 
-
 <!-- ================= GALLERY ================= -->
 
-<section
-class="gallery"
-id="gallery">
+<section class="gallery" id="gallery">
 
 <h2 class="section-title">
 Our Gallery
 </h2>
 
-
 <div class="gallery-grid">
 
-
 <div class="gallery-item">
-
-<img
-src="gallery1.png"
-alt="Gallery Photo 1">
-
+<img src="gallery1.png" alt="Gallery Photo 1">
 </div>
 
-
 <div class="gallery-item">
-
-<img
-src="gallery2.png"
-alt="Gallery Photo 2">
-
+<img src="gallery2.png" alt="Gallery Photo 2">
 </div>
 
-
 <div class="gallery-item">
-
-<img
-src="gallery3.png"
-alt="Gallery Photo 3">
-
+<img src="gallery3.png" alt="Gallery Photo 3">
 </div>
 
-
 <div class="gallery-item">
-
-<img
-src="gallery4.png"
-alt="Gallery Photo 4">
-
+<img src="gallery4.png" alt="Gallery Photo 4">
 </div>
 
-
 <div class="gallery-item">
-
-<img
-src="gallery5.png"
-alt="Gallery Photo 5">
-
+<img src="gallery5.png" alt="Gallery Photo 5">
 </div>
 
-
 <div class="gallery-item">
-
-<img
-src="gallery6.png"
-alt="Gallery Photo 6">
-
+<img src="gallery6.png" alt="Gallery Photo 6">
 </div>
 
-
 <div class="gallery-item">
 
-<video
-controls
-playsinline>
-
-<source
-src="gallery-video1.mp4"
-type="video/mp4">
-
+<video controls playsinline>
+<source src="gallery-video1.mp4" type="video/mp4">
 Your browser does not support the video tag.
-
 </video>
 
 </div>
 
-
 <div class="gallery-item">
 
-<video
-controls
-playsinline>
-
-<source
-src="gallery-video2.mp4"
-type="video/mp4">
-
+<video controls playsinline>
+<source src="gallery-video2.mp4" type="video/mp4">
 Your browser does not support the video tag.
-
 </video>
 
 </div>
 
-
 <div class="gallery-item">
 
-<video
-controls
-playsinline>
-
-<source
-src="gallery-video3.mp4"
-type="video/mp4">
-
+<video controls playsinline>
+<source src="gallery-video3.mp4" type="video/mp4">
 Your browser does not support the video tag.
-
 </video>
 
 </div>
 
-
 <div class="gallery-item">
 
-<video
-controls
-playsinline>
-
-<source
-src="gallery-video4.mp4"
-type="video/mp4">
-
+<video controls playsinline>
+<source src="gallery-video4.mp4" type="video/mp4">
 Your browser does not support the video tag.
-
 </video>
 
 </div>
-
 
 </div>
 
 </section>
 
 
-
 <!-- ================= APPLY FORM ================= -->
 
-<section
-class="address"
-id="contact">
+<section class="address" id="contact">
 
 <h2 class="section-title">
 Apply Now
 </h2>
 
-
 <div class="address-box">
-
 
 <form
 class="application-form"
 onsubmit="sendToWhatsApp(event)">
-
 
 <input
 type="text"
@@ -1735,13 +855,11 @@ id="name"
 placeholder="Enter Your Name"
 required>
 
-
 <input
 type="tel"
 id="mobile"
 placeholder="Enter Mobile Number"
 required>
-
 
 <input
 type="text"
@@ -1749,10 +867,7 @@ id="className"
 placeholder="Enter Class"
 required>
 
-
-<select
-id="course"
-required>
+<select id="course" required>
 
 <option value="">
 Select Course
@@ -1784,13 +899,11 @@ Artificial Intelligence
 
 </select>
 
-
 <textarea
 id="message"
 rows="4"
 placeholder="Enter Your Message">
 </textarea>
-
 
 <button
 type="submit"
@@ -1800,7 +913,6 @@ Submit Application
 
 </button>
 
-
 </form>
 
 </div>
@@ -1808,8 +920,7 @@ Submit Application
 </section>
 
 
-
-<!-- ================= WHATSAPP BUTTON ================= -->
+<!-- ================= WHATSAPP ================= -->
 
 <a
 href="https://wa.me/919315957454"
@@ -1821,7 +932,6 @@ aria-label="Chat on WhatsApp">
 <i class="fa-brands fa-whatsapp"></i>
 
 </a>
-
 
 
 <!-- ================= FOOTER ================= -->
@@ -1839,10 +949,467 @@ WhatsApp: +91 93159 57454
 </footer>
 
 
+<!-- ================= EXTRA CSS ================= -->
 
-<!-- ================= WHATSAPP SCRIPT ================= -->
+<style>
+
+/* ================= COURSES ================= */
+
+.services{
+    padding:80px 8%;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:15px;
+    margin-bottom:15px;
+}
+
+.card h3{
+    color:#0057b8;
+    margin-bottom:10px;
+}
+
+
+/* ================= GAMES ================= */
+
+.games{
+    padding:80px 8%;
+    background:#fff;
+}
+
+.games-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+}
+
+.game-card{
+    background:#f5f9ff;
+    padding:18px;
+    border-radius:22px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+    transition:0.4s;
+}
+
+.game-card:hover{
+    transform:translateY(-10px);
+}
+
+.game-card img{
+    width:100%;
+    height:190px;
+    object-fit:cover;
+    border-radius:16px;
+    margin-bottom:15px;
+}
+
+.game-card h3{
+    color:#0057b8;
+    font-size:22px;
+    margin-bottom:8px;
+}
+
+.game-card p{
+    color:#555;
+    font-size:14px;
+    line-height:1.6;
+    margin-bottom:15px;
+}
+
+.game-btn{
+    display:inline-block;
+    background:#0057b8;
+    color:white;
+    padding:10px 24px;
+    border-radius:25px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.game-btn:hover{
+    background:#002b7f;
+}
+
+
+/* ================= TEACHERS ================= */
+
+.teachers{
+    padding:80px 8%;
+    background:#f5f9ff;
+}
+
+.teacher-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(230px,1fr));
+    gap:25px;
+}
+
+.teacher-card{
+    background:white;
+    padding:30px 20px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    transition:0.4s;
+}
+
+.teacher-card:hover{
+    transform:translateY(-10px);
+}
+
+.teacher-photo{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #0057b8;
+    margin-bottom:18px;
+}
+
+.teacher-card h3{
+    color:#0057b8;
+    font-size:23px;
+    margin-bottom:8px;
+}
+
+.teacher-card h4{
+    color:#d4a017;
+    margin-bottom:12px;
+}
+
+.teacher-card p{
+    color:#555;
+    font-size:15px;
+    line-height:1.6;
+}
+
+
+/* ================= FOUNDER ================= */
+
+.founder{
+    padding:80px 8%;
+    background:white;
+    text-align:center;
+}
+
+.founder-photo{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    object-fit:cover;
+    display:block;
+    margin:0 auto 20px;
+    border:5px solid #0057b8;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.founder-box{
+    max-width:800px;
+    margin:auto;
+    padding:30px;
+    border-radius:20px;
+    background:#f5f9ff;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.founder-box h3{
+    color:#0057b8;
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+
+/* ================= STORY / TRIBUTE ================= */
+
+.tribute-section{
+    padding:80px 8%;
+    background:#f5f9ff;
+    text-align:center;
+}
+
+.tribute-box{
+    max-width:850px;
+    margin:auto;
+    padding:35px;
+    background:white;
+    border-radius:22px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.12);
+    text-align:left;
+}
+
+.tribute-box h3{
+    text-align:center;
+    color:#0057b8;
+    font-size:28px;
+    margin-bottom:25px;
+}
+
+.tribute-box p{
+    color:#444;
+    font-size:16px;
+    line-height:1.8;
+    margin-bottom:18px;
+}
+
+
+/* ================= VOICE BUTTONS ================= */
+
+.voice-buttons{
+    text-align:center;
+    margin-top:30px;
+}
+
+.voice-btn{
+    border:none;
+    background:#0057b8;
+    color:white;
+    padding:13px 24px;
+    border-radius:30px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    margin:5px;
+    transition:0.3s;
+}
+
+.voice-btn:hover{
+    background:#002b7f;
+    transform:translateY(-2px);
+}
+
+.stop-btn{
+    background:#dc3545;
+}
+
+.stop-btn:hover{
+    background:#b02a37;
+}
+
+
+/* ================= EVENTS ================= */
+
+.celebration{
+    padding:80px 8%;
+    background:linear-gradient(
+        135deg,
+        #0057b8,
+        #002b7f
+    );
+    text-align:center;
+    color:white;
+}
+
+.celebration h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.celebration p{
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+}
+
+
+/* ================= GALLERY ================= */
+
+.gallery{
+    padding:80px 8%;
+    background:white;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.gallery-item{
+    background:#f5f9ff;
+    padding:15px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    overflow:hidden;
+}
+
+.gallery-item img,
+.gallery-item video{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+    display:block;
+}
+
+
+/* ================= CONTACT ================= */
+
+.address{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.address-box{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    max-width:700px;
+    margin:auto;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.application-form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.application-form input,
+.application-form select,
+.application-form textarea{
+    width:100%;
+    padding:14px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+}
+
+.application-form input:focus,
+.application-form select:focus,
+.application-form textarea:focus{
+    border-color:#0057b8;
+}
+
+
+/* ================= WHATSAPP ================= */
+
+.whatsapp-float{
+    position:fixed;
+    width:62px;
+    height:62px;
+    bottom:25px;
+    right:25px;
+    background:#25D366;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:34px;
+    text-decoration:none;
+    box-shadow:0 5px 20px rgba(0,0,0,0.3);
+    z-index:9999;
+}
+
+.whatsapp-float:hover{
+    transform:scale(1.1);
+}
+
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#001b4d;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+    .services,
+    .games,
+    .teachers,
+    .founder,
+    .gallery,
+    .address{
+        padding:60px 5%;
+    }
+
+    .tribute-section{
+        padding:60px 5%;
+    }
+
+    .tribute-box{
+        padding:25px 20px;
+    }
+
+    .tribute-box h3{
+        font-size:23px;
+    }
+
+    .game-card img{
+        height:180px;
+    }
+
+    .gallery-item img,
+    .gallery-item video{
+        height:200px;
+    }
+
+    .founder-photo{
+        width:140px;
+        height:140px;
+    }
+
+    .teacher-photo{
+        width:135px;
+        height:135px;
+    }
+
+    .celebration h2{
+        font-size:30px;
+    }
+
+    .whatsapp-float{
+        width:58px;
+        height:58px;
+        right:18px;
+        bottom:18px;
+        font-size:31px;
+    }
+
+}
+
+</style>
+
+
+<!-- ================= JAVASCRIPT ================= -->
 
 <script>
+
+/* ================= WHATSAPP FORM ================= */
 
 function sendToWhatsApp(event){
 
@@ -1868,15 +1435,10 @@ function sendToWhatsApp(event){
 
     const whatsappMessage =
     "New Application - AD Foundation NGO\n\n" +
-
     "Name: " + name + "\n" +
-
     "Mobile: " + mobile + "\n" +
-
     "Class: " + className + "\n" +
-
     "Course: " + course + "\n" +
-
     "Message: " + message;
 
     const url =
@@ -1885,21 +1447,89 @@ function sendToWhatsApp(event){
     "?text=" +
     encodeURIComponent(whatsappMessage);
 
-    window.open(
-        url,
-        "_blank"
-    );
+    window.open(url, "_blank");
 
 }
 
 
-/* ================= LETTER VOICE ================= */
+/* ================= OUR STORY VOICE ================= */
+
+function playStory(){
+
+    if(!("speechSynthesis" in window)){
+
+        alert(
+        "Sorry, your browser does not support voice reading."
+        );
+
+        return;
+    }
+
+    window.speechSynthesis.cancel();
+
+    const text = `
+    AD Foundation is a free NGO.
+
+    This NGO is made in the loving memory of Avay Luthra.
+
+    Avay brought happiness to his family and people around him.
+
+    After Avay passed away, his mother Rakhi Luthra wanted
+    to keep his memories alive.
+
+    She wanted to do something good for children and society.
+
+    Because of this dream, AD Foundation was started.
+
+    The main goal of AD Foundation is to help children get
+    education and learn new skills for free.
+
+    Here, children can learn English, Mathematics, Science,
+    Computer, Graphic Design and Artificial Intelligence
+    without any cost.
+
+    Every child has a dream.
+
+    AD Foundation wants to help children achieve their dreams
+    and build a bright future.
+
+    Today, this foundation is working with love, care and
+    dedication in the memory of Avay Luthra.
+
+    A small step for education, a big tribute to Avay Luthra.
+    `;
+
+    const speech =
+    new SpeechSynthesisUtterance(text);
+
+    speech.lang = "en-US";
+    speech.rate = 0.9;
+    speech.pitch = 1;
+    speech.volume = 1;
+
+    window.speechSynthesis.speak(speech);
+
+}
+
+
+/* ================= STOP STORY ================= */
+
+function stopStory(){
+
+    window.speechSynthesis.cancel();
+
+}
+
+
+/* ================= TRIBUTE VOICE ================= */
 
 function readLetter(){
 
-    if (!("speechSynthesis" in window)) {
+    if(!("speechSynthesis" in window)){
 
-        alert("Sorry, your browser does not support voice reading.");
+        alert(
+        "Sorry, your browser does not support voice reading."
+        );
 
         return;
     }
@@ -1913,50 +1543,16 @@ function readLetter(){
     new SpeechSynthesisUtterance(text);
 
     speech.lang = "en-US";
-
     speech.rate = 0.9;
-
-    speech.pitch = 0.85;
-
+    speech.pitch = 0.9;
     speech.volume = 1;
-
-    const voices =
-    window.speechSynthesis.getVoices();
-
-
-    /* Prefer an English male voice */
-
-    const maleVoice =
-    voices.find(function(voice){
-
-        const voiceInfo =
-        (voice.name + " " + voice.lang).toLowerCase();
-
-        return (
-            voiceInfo.includes("male") ||
-            voiceInfo.includes("david") ||
-            voiceInfo.includes("mark") ||
-            voiceInfo.includes("daniel") ||
-            voiceInfo.includes("alex") ||
-            voiceInfo.includes("guy")
-        );
-
-    });
-
-
-    if(maleVoice){
-
-        speech.voice = maleVoice;
-
-    }
-
 
     window.speechSynthesis.speak(speech);
 
 }
 
 
-/* ================= STOP VOICE ================= */
+/* ================= STOP TRIBUTE ================= */
 
 function stopReading(){
 
@@ -1964,18 +1560,7 @@ function stopReading(){
 
 }
 
-
-/* ================= LOAD VOICES ================= */
-
-window.speechSynthesis.onvoiceschanged =
-function(){
-
-    window.speechSynthesis.getVoices();
-
-};
-
 </script>
 
 
-</body>
-</html>
+<!-- ================= PART 3 END ================= -->
